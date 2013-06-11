@@ -1,0 +1,63 @@
+<% @current_nav = 3 %>
+
+<% content_for :pageid do %>page_technology<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("technology.page_title") %></title>
+<meta name="description" content="<%= I18n.t("technology.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("technology.page_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("technology.page_canonical") %>" addthis:description="<%= I18n.t("technology.page_description") %>" addthis:title="<%= I18n.t("technology.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<section id="shield" class="wf">
+	<article id="intro">
+		<h1><%= I18n.t("safety_shield.intro.header") %></h1>
+		<%= link_to I18n.t("safety_shield.intro.back.label"), I18n.t("safety_shield.intro.back.link"), :class=> "ss1", :query=>"chapter=safety-shield" %>
+	</article>
+	<article id="risk-notappeared">
+		<h2><%= I18n.t("safety_shield.risk_n_appeared.header") %></h2>
+		<p><%= I18n.t("safety_shield.risk_n_appeared.tagline") %></p>
+	</article>
+	<article>
+		<%= image_tag "technology/safety-shield/intelligent-cruise-control.jpg", :width=>300 %>
+		<h3><%= I18n.t("safety_shield.risk_n_appeared.int_cc.header") %></h3>
+		<p><%= I18n.t("safety_shield.risk_n_appeared.int_cc.copy") %></p>
+		<h3><%= I18n.t("safety_shield.risk_n_appeared.dist_control.header") %></h3>
+		<p><%= I18n.t("safety_shield.risk_n_appeared.dist_control.copy") %></p>
+	</article>
+	<article class="last">
+		<%= image_tag "technology/safety-shield/around-view-monitor.jpg", :width=>300 %>
+		<h3><%= I18n.t("safety_shield.risk_n_appeared.around_view.header") %></h3>
+		<p><%= I18n.t("safety_shield.risk_n_appeared.around_view.copy") %></p>
+	</article>
+	<nav class="safety-shield">
+		<ul>
+
+			<li><%= link_to I18n.t("safety_shield.safety-shield.label"), I18n.t("safety_shield.safety-shield.link"), :query=>"chapter=safety-shield" %></li>
+			<li><%= link_to I18n.t("safety_shield.forward.label"), I18n.t("technology.safetyshield.risk_appeared.link") %></li>
+		</ul>
+	</nav>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+<li>[1] <%= I18n.t("disclaimers.technology.cruise") %></li>
+<li>[2] <%= I18n.t("disclaimers.technology.distance_control") %></li>
+<li>[3] <%= I18n.t("disclaimers.technology.monitor") %></li>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageController();
+	}); 
+</script>
+<% end %>

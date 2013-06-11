@@ -1,0 +1,76 @@
+---
+crmpageid: 30950
+---
+<% @current_nav = 7 %>
+
+<% content_for :pageid do %>page_gallery<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("gallery.page_title") %></title>
+<meta name="description" content="<%= I18n.t("gallery.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("gallery.page_interior_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("gallery.page_interior_canonical") %>" addthis:description="<%= I18n.t("gallery.page_description") %>" addthis:title="<%= I18n.t("gallery.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<!-- page content -->
+<section id="gallery" class="wf interior">
+  <article id="intro" class="visuallyhidden">
+    <h1><%= I18n.t("features.header") %></h1>
+  </article>
+  <article>
+    <div id="slider-container">
+      <ul class = "slider">
+        <li><%= image_tag "gallery/interior/1.jpg" %></li>
+        <li><%= image_tag "gallery/interior/2.jpg" %></li>
+        <li><%= image_tag "gallery/interior/3.jpg" %></li>
+        <li><%= image_tag "gallery/interior/4.jpg" %></li>
+        <li><%= image_tag "gallery/interior/5.jpg" %></li>
+        <li><%= image_tag "gallery/interior/6.jpg" %></li>
+        <li><%= image_tag "gallery/interior/7.jpg" %></li>
+      </ul>
+      <div id="slider-bullets" class="clearfix">
+        <ul>
+          <li class="current">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+        </ul>
+      </div>
+    </div>
+    <div id="slider-nav" class="clearfix">
+      <ul>
+        <li class="current"><%= image_tag "gallery/interior/thumb1.jpg" %></li>
+        <li><%= image_tag "gallery/interior/thumb2.jpg" %></li>
+        <li><%= image_tag "gallery/interior/thumb3.jpg" %></li>
+        <li><%= image_tag "gallery/interior/thumb4.jpg" %></li>
+        <li><%= image_tag "gallery/interior/thumb5.jpg" %></li>
+        <li><%= image_tag "gallery/interior/thumb6.jpg" %></li>
+        <li><%= image_tag "gallery/interior/thumb7.jpg" %></li>
+      </ul>
+    </div>
+  </article>
+  <%= partial "partials/sub_nav" %>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageControllers.Gallery();
+	}); 
+</script>
+<% end %>

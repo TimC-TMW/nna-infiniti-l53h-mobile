@@ -1,0 +1,353 @@
+bg-bul:
+  #CONFIG
+  context_path: "/bg-bul/"  
+  country: "bg"
+  language: "bul"
+  booth: "tdi-infinitibgbg"
+  metric: "metrics.infinitibg.bg"
+  #HEADER
+  header:
+    logo: "Infiniti"
+    link: "/bg-bul/index.html"
+    signup: "НОВИНИ"
+    signup_link: "http://mobile.infiniti.eu/bul-bg/request_further_information?model=q50"
+  #NAV
+  nav:
+    home:
+      label: "Начало"
+      link: "/bg-bul/index.html"
+    design:
+      label: "Дизайн"
+      link: "/bg-bul/design/index.html"
+    performance:
+      label: "Динамика"
+      link: "/bg-bul/performance/index.html"
+    technology:
+      label: "Технология"
+      link: "/bg-bul/technology/index.html"
+    features:
+      label: "ХАРАКТЕРИСТИКИ"
+      link: "/bg-bul/features/index.html"
+    gallery:
+      label: "ГАЛЕРИЯ >"
+      link: "/bg-bul/gallery/index.html"
+      ext_label: "Екст. Галерия"
+      int_label: "Инт. Галерия"
+      int_link: "/bg-bul/gallery/interior.html"
+      360_label: "360s"
+      360_link: "/bg-bul/gallery/360s.html"
+    updates:
+      label: "АБОНИРАНЕ ЗА НОВИНИ"      
+  subnav:
+    design: 
+      label: "ИЗКУСИТЕЛЕН"
+      label2: "ДИЗАЙН >"
+    performance:
+      label: "ОТЛИЧНА"
+      label2: "ДИНАМИКА >"
+    technology:
+      label: "ИНТУИТИВНА"
+      label2: "ТЕХНОЛОГИЯ >"
+    features:
+      label: "ХАРАКТЕРИСТИКИ >"
+    gallery:
+      label: "ГАЛЕРИЯ >"      
+  #FOOTER
+  footer:
+    disclaimers: 
+      header: "Отказ от отговорност:"
+      label: "Виж отказ от отговорност "
+      plus: "+"
+    share:
+      label: "Споделяне:"
+      email: "Споделете по имейл"
+      facebook: "Споделете във Facebook"
+      twitter: "Споделете в Twitter"      
+    follow:
+      label: "Следвайте ни:"      
+      facebook: "Следвайте във Facebook"
+      facebook_link: "https://www.facebook.com/infinitieurope"
+      twitter: "Следвайте в Twitter"
+      twitter_link: "https://twitter.com/InfinitiEurope"
+      you_tube: "Следвайте в YouTube"
+      you_tube_link: "http://www.youtube.com/user/infinitieurope"
+    back:
+      header: "Други дестинации:"
+      label: "Infiniti България"
+      link: "http://mobile.infiniti.eu/bul-bg/"
+    fullsite:
+      label: "Разгледайте пълния микросайт на Q50"
+      link: "http://www.infinitibg.bg/all-new-q50/"
+    feedback:
+      header: "Обратна връзка и правна информация:" 
+    privacy:
+      label: "Правна информация и поверителност "
+      link: "http://mobile.infiniti.eu/bul-bg/legal_privacy"
+    microdisclaimer:
+      label: "Микросайт - отказ от отговорност"
+      link: "#"
+  #HOME PAGE
+  home:
+    page_title: "Изцяло новият Infiniti Q50 | Infiniti България"
+    page_description: "Официален уебсайт на Infiniti България: Представяме ви изцяло новия Infiniti Q50. Разгледайте дизайна, динамиката и технологията на този революционен нов модел."
+    page_canonical: "/bg-bul/index.html"
+    headline:
+      intro: "Представяме ви изцяло новия Infiniti Q50"
+      q50: "Infiniti Q50"
+    tagline: "НАЧАЛО НА ПРОДАЖБИТЕ – ЕСЕН 2013 г."
+    start: "ЗАПОЧНЕТЕ ПЪТЕШЕСТВИЕТО СИ:"
+  #DESIGN PAGE
+  design:
+    page_title: "Изцяло новият Infiniti Q50 - Дизайн | Infiniti България"
+    page_description: "Официален уебсайт на Infiniti България: Разгледайте изкусителния дизайн на изцяло новия Infiniti Q50 - вдъхновен израз на стил и лукс."
+    page_canonical: "/bg-bul/design/index.html"
+    intro:
+      header: "ИЗКУСИТЕЛЕН ДИЗАЙН"
+      copy: "Вдъхновен израз на дизайн"
+    overview:
+      header: "Общ преглед на дизайна"
+      copy: "Когато дизайнът се измерва с правилата, които нарушава, вместо с тези, които следва, с практиките, които създава, вместо с тези, които използва, с предположенията, които оспорва, вместо с тези, които утвърждава, тогава той е свободен да адаптира формата и функцията към нови цели - вашите собствени."
+    exterior:
+      header: "Екстериор 360"
+      copy: "За да разгледате Q50 от всички страни, плъзнете с пръст, за да завъртите."
+    headlights:
+      header: "Адаптивни фарове"
+      copy: "Изразително осветление, което не може да се сбърка. Уникален израз на дизайн, съсредоточен върху двойка многостепенни светодиодни фарове, подчертани от дневни светлини. Те се адаптират интелигентно към промените в осветеността, включват се с намаляването на дневната светлина, a дългите светлини се изключват независимо едни от други от страната на водача или пътника благодарение на асистента SmartBeams при приближаването на превозни средства в насрещното платно през нощта. Вече не се налага да избирате най-подходящата реакция спрямо условията на осветеност, защото фаровете го правят вместо вас."
+    seating:
+      header: "Луксозни седалки"
+      copy: "Революция в ергономичния дизайн, тези луксозно изработени седалки предоставят оптимална опора за горната част на тялото за съвършено удобство при шофиране. И така ще усетите единствено вътрешната връзка между водача и автомобила. [1]"
+    interior:
+      header: "Интуитивен интериор"
+      copy: "Интуитивен интериор – прецизно ръчно полирани елементи от кленово дърво. Изкусно ушит кожен салон. Стилно подбрани материали. Интелигентни прибори. Детайлите са разположени интуитивно за по-голямо удобство или контрол. Всичко това е красиво обгърнато от двойната вълна на отличителното табло, което осигурява идеален комфорт на всички пътници. Добре дошли в свят на лукс, съсредоточен изцяло около вас, без значение дали сте зад волана или на пътническата седалка."
+    pano:
+      header: "Панорама на интериора"
+      copy: "Вижте лукса в 360-градусов изглед. Щракнете или докоснете, за да започнете. Поставете пръст върху сензорния екран и го плъзнете, за да се насладите на панорамата на интериора на изцяло новия Infiniti Q50. Отдалечете палеца и показалеца си върху екрана, за да увеличите мащаба.  Съберете палеца и показалеца си заедно върху екрана, за да го намалите."
+  #PERFORMANCE PAGE
+  performance:
+    page_title: "Изцяло новият Infiniti Q50 - Динамика | Infiniti България"
+    page_description: "Официален уебсайт на Infiniti България: Изживейте отличната динамика на изцяло новия Infiniti Q50 с повишена мощност и ефективност."
+    page_canonical: "/bg-bul/performance/index.html"
+    intro:
+      header: "ОТЛИЧНА ДИНАМИКА"
+      copy: "Установените норми не предлагат лукс"      
+    handling:
+      header: "Оптимална аеродинамика"
+      copy: "Овладейте силата на вятъра – макар обикновено да е враг на динамиката, вятърът може също така да работи за нея. Специално проектираните с оптимална аеродинамика горна и долна част на каросерията насочват въздушния поток над, покрай и под автомобила, като осигуряват стабилно и предсказуемо управление при всякаква скорост. В съчетание с по-стегнатото окачване този цялостен подход към аеродинамиката намалява влиянието на въздушната турболенция дори и при висока скорост на магистралата, за да осигури по-добро усещане за сцепление и контрол."
+      video: "управление"
+    sportmodel:
+      header: "Спортна версия"
+      copy: "Спортната версия на Q50 излиза на сцената със специална спортна броня и уникален преден сплитер. 19-инчовите алуминиеви джанти със спици са снабдени със спортни бутала и ротори за изключителна сила при спиране и са перфектно разположени под извивките на калниците. Но този Infiniti е създаден да се движи. От момента, в който попаднете в обятията на спортните кожени седалки, магнезиевите лостчета за смяна на предавките са всичко, което стои между вас и седемте новаторски измерения на динамиката."
+      video: "спорт"
+    engines:
+      header: "Двигатели"
+      copy: "Изборът е ваш: Въодушевяващата динамика на системата Direct Response Hybrid на Infiniti, която съчетава мощта на 3,5-литровия V6 бензинов двигател с подобряващ ефективността електромотор или пъргав 2,2-литров 4-цилиндров дизелов двигател с турбокомпресор, който предоставя 170 к.с. при по-малко от 115 г/км CO2 емисии. Каквото и да изберете, можете да сте сигурни в едно – няма да се налага да правите компромиси между динамиката и ефективността. [1]"      
+    hybrid:
+      header: "Мощен хибрид"
+      copy: "Мощен хибрид - съвършено съчетание от мощ и ефективност, което осигурява зашеметяващо ускорение и невероятна динамика, която може да се опише единствено като наелектризираща. традиционните луксозни автомобили разчитат на по-големи двигатели, за да подобрят динамиката. Q50 Hybrid използва литиево-йонен акумулатор, за да освободи ураган от допълнителна мощност, когато натиснете педала на газта. Тя преминава през интелигентния двоен съединител, за да предостави максимална динамика, без да увеличава разхода на гориво. Още по-удивителното е, че системата се презарежда частично всеки път, когато натиснете спирачките."
+      video: "хибрид"
+    steering:
+      header: "Директно адаптивно управление"
+      copy: "Директно адаптивно управление - Контрол. Прецизност. Адаптивност. Трите най-важни елемента на управлението. След продължили повече от десет години изследвания и разработка, тази технология вече е в ръцете ви. Тази първа в света подобна система използва електроника, за да постигне по-прецизно усещане за управление. Когато се движите върху неравни пътища, тя намалява нуждата от постоянни фини настройки и създава чувство за стабилност, като в същото време предпазва водача от прекомерни вибрации от пътя."
+      video: "волан"
+    drivemodes:
+      header: "Персонални режими на шофиране"
+      copy: "Персонални режими на шофиране – Революционната система за директно адаптивно управление на Infiniti ви позволява да избирате между три режима на шофиране, когато седнете зад волана на автомобила. Изберете спортен или стандартен режим – който отразява нуждите или настроението ви. А персоналният режим ви позволява да настройвате волана и реакциите, за да шофирате точно така, както искате. [2]"
+      video: "задвижване"
+  #TECHNOLOGY PAGE
+  technology:
+    page_title: "Изцяло новият Infiniti Q50 - Технология | Infiniti България"
+    page_description: "Официален уебсайт на Infiniti България: Открийте интуитивната технология на изцяло новия Infiniti Q50, включително модерни дигитални, аудио и защитни функции."
+    page_canonical: "/bg-bul/technology/index.html"
+    intro:
+      header: "ИНТУИТИВНА ТЕХНОЛОГИЯ"
+      copy: "Никога не губете връзка"
+    environment:
+      header: "Дигитална среда"
+      copy: "Персонализируема дигитална среда – Тя знае повече от това коя е предпочитаната от вас позиция на седалката. Повече от идеалните настройки на климатичната инсталация. Повече от предпочитания живописен маршрут до вкъщи или любимия ви режим на шофиране. Тя познава самите вас. А в момента, когато разпознае интелигентния ключ, системата се уверява, че вашият Q50 е настроен точно така, както искате. Това не е магия, а напреднала технология, която се усеща като магия. [1]"
+    intouch:
+      header: "Infiniti InTouch&#8482;"
+      copy: "Infiniti InTouch&#8482; – Свържете живота си, където и да сте. Infiniti InTouch&#8482; се грижи да не изоставате. Тази революционна система с два екрана ви позволява безпроблемно да свързвате, управлявате и персонализирате дигиталните си изживявания, докато сте в автомобила, без да изпускате каквото и да било. Чрез докосване или гласови команди можете да използвате Infiniti InTouchTM Apps, имейл, навигация, синхронизиране със смартфон и много други. Това е начинът да се свържете най-добре със света около вас, където и да отидете. [2]"
+    connection:
+      header: "Останете свързани"
+      copy: ""
+    audio:
+      header: "BOSE<sup>&reg;</sup> Аудио"
+      copy: "Аудио система BOSE<sup>&reg;</sup> от следващо поколение - Звуковите инженери на BOSE<sup>&reg;</sup> създадоха уникално аудио изживяване, специално персонализирано за изцяло новия Q50.  Системата с 14 високоговорителя има три 10-инчови субуфера за по-ясни ниски честоти и по-голяма наслада от звука.  Останалите високоговорители са подредени така, че да ви обгръщат с оптимизиран за акустиката на купето звук – като филтрират шума и изкривяването, за да ви предоставят концертно изживяване, което е характерно само за Infiniti."
+    collision:
+      header: "Система за предупреждение за сблъсък на заден ход"
+      copy: "За да сте по-сигурни на заден ход - Системата за предупреждение за сблъсък на заден ход на Infiniti е поредният значителен напредък, който предоставя увереност при шофиране. Когато се движите назад, BCI следи за пресичащи пътя ви превозни средства и обекти зад автомобила и предоставя звукова и визуална сигнализация на водача. Ако е необходимо, системата ще задейства автоматично спирачките, за да се опита да избегне сблъсък. [3]"
+    safetyshield:
+      header: "Осигурителен щит"
+      copy: "Осигурителният щит на Infiniti представлява нашият задълбочен подход към безопасността. Q50 предлага многостепенни технологии, които подобряват безопасността и удобството, като следят условията и ви предупреждават за потенциални опасности, помагат ви да избягвате катастрофи и защитават вас и пътниците ви, ако се стигне до такава."
+      risk_n_appeared:
+        label: "Все още няма възникнала опасност >"
+        link: "/bg-bul/technology/safety-shield/risk-has-not-yet-appeared.html"
+      risk_appeared:
+        label: "Възникна опасност >"
+        link: "/bg-bul/technology/safety-shield/risk-has-appeared.html"
+      collision_m_occur:
+        label: "Може да възникне сблъсък >"
+        link: "/bg-bul/technology/safety-shield/collision-may-occur.html"
+      collision_unavoidable: 
+        label: "Неизбежен сблъсък >"
+        link: "/bg-bul/technology/safety-shield/collision-unavoidable.html"
+      collision:
+        label: "Сблъсък >"      
+        link: "/bg-bul/technology/safety-shield/collision.html"
+    monitor:
+      header: "Система за видео наблюдение на 360&deg; около автомобила (AVM – Around View<sup>&reg;</sup> Monitor)"
+      copy: "Система за видео наблюдение на 360&deg; около автомобила (Around View<sup>&reg;</sup> Monitor) - Infiniti представя първата в света система за наблюдение на 360&deg; около автомобила – напреднала, но същевременно интуитивна технология, която улеснява паркирането. Разположените от всички страни на автомобила четири камери ви предоставят истински 360-градусов изглед от птичи поглед на дисплея. А сега Infiniti подобри още повече системата, като добави разпознаване на движещи се обекти - функция, която предупреждава водача за движещи се обекти. Q50 предлага нова перспектива на света около вас и ви помага да се движите дори и в най-тесните пространства. [4]"
+  #SAFETY SHIELD PAGES
+  safety_shield:
+    intro:
+      header: "Осигурителен щит на Infiniti"
+      back:
+        label: "< Връщане към Осигурителния щит"
+        link: "/bg-bul/technology/index.html"
+    risk_n_appeared:
+      header: "Все още няма възникнала опасност"
+      tagline: "Помага ви да продължавате да шофирате удобно."
+      int_cc:
+        header: "Интелигентен круз контрол (ICC – Intelligent Cruise Control) (При всякакви скорости) [1]"
+        copy: "Автоматично регулира скоростта, за да се адаптира към автомобилния поток."
+      dist_control:
+        header: "Асистент за контрол на дистанцията (DCA – Distance Control Assist) [2]"
+        copy: "Първата подобна система в автомобилната индустрия интуитивно помага на водача да отпуска газта и да натиска спирачките при условия на движение, изискващи често натискане на спирачките."
+      around_view:
+        header: "Система за видео наблюдение на 360&deg; около автомобила (AVM – Around View Monitor) с разпознаване на движещи се обекти [3]"
+        copy: "Първата в света система за видео наблюдение на 360&deg; около автомобила с разпознаване на движещи се обекти ви предоставя 360&deg; изглед при паркиране, както и звукова и визуална сигнализация за движещи се обекти."
+    risk:
+      header: "Възникна опасност"
+      tagline: "Помага на водача да възстанови безопасните условия на шофиране."
+      back_collision:
+        header: "Система за предупреждение за сблъсък на заден ход (Back-up Collision Intervention) [1]"
+        copy: "Използва радарни и сонарни сензори отстрани и отзад на автомобила, които сигнализират на водача за потенциален сблъсък с обект, който пресича пътя на автомобила при движение на заден ход. Спирачките се включват автоматично, ако водачът не спре."
+      blind_spot:
+        header: "Системи за предупреждение за &#8222;сляпо петно&#8220; (BSW – Blind Spot Warning) и предотвратяване на &#8222;сляпо петно&#8220; (BSI – Blind Sport Prevention) [2]"
+        copy: "Първата в света технология, която предупреждава водача за присъствието на друг автомобил в &#8222;сляпото петно&#8220; при смяна на лентите. Тя помага на водача и когато той трябва да върне автомобила обратно в средата на лентата."
+      lane_depart:
+        header: "Системи за предупреждение при напускане на лентата (LDW – Lane Departure Warning) и за предотвратяване на напускане на лентата (LDP – Lane Departure Prevention) [3]"
+        copy: "Отново за пръв път в автомобилната индустрия, системата за предотвратяване на излизане от лентата засича неволното отклоняване от лентата и помага на водача да се върне в средата й."
+      predict_collision:
+        header: "Технология за предсказване и предупреждение за челен сблъсък (PFCW – Predictive Forward Collision Warning) [4]"
+        copy: "Първата в света подобна система предупреждава водача за опасностите, които се намират извън зрителното му поле. Тя не само отчита относителната скорост и дистанцията до автомобила директно пред вас, но и този пред него."
+    may_occur:
+      header: "Може да възникне сблъсък"
+      tagline: "Помага на водача да възстанови безопасните условия на шофиране."
+      forward_brake:
+        header: "Система за аварийно задействане на спирачките при опасност от челен сблъсък (Forward Emergency Braking) [1]"
+        copy: "<p>Когато системата прецени, че е необходимо да се намали скоростта, сигнализира на водача чрез дисплея и звук, след което повдига педала на спирачките нагоре и плавно натиска частично спирачките, за да помогне на водача да намали скоростта на превозното средство.</p><p>Когато системата прецени, че съществува опасност от сблъсък, автоматично натиска спирачките, за да се опита да го избегне.</p>"
+    unavoidable:
+      header: "Неизбежен сблъсък"
+      tagline: "Помага за свеждане на нараняванията до минимум при неизбежна катастрофа."
+      forward_brake:
+        header: "Система за аварийно задействане на спирачките при опасност от челен сблъсък (Forward Emergency Braking) [1]"
+        copy: "Ако възникнат условия, при които сблъсъкът е неизбежен, системата предупреждава водача и автоматично включва спирачките и стяга предпазния колан на водача, за да намали скоростта и да го предпази от наранявания."
+    collision:
+      header: "Сблъсък"
+      tagline: "Помага за свеждане на нараняванията до минимум при катастрофа."
+      body_structure:
+        header: "Ограничители и структура на каросерията (Forward Emergency Braking) [1]"
+        copy: "Подобрена система от въздушни възглавници на Infiniti; монтирани на предните места допълнителни странични въздушни възглавници, предни предпазни колани с обтегачи, ограничители на товара и сигнализация за поставяне на предпазните колани. Зонова конструкция на каросерията с предна и задна зона за деформация."
+    back:
+      label: "< Назад"
+      link: "/bg-bul/technology/index.html"
+    safety-shield:
+      label: "Връщане към Осигурителния щит"
+      link: "/bg-bul/technology/index.html"
+    forward:
+      label: "Напред >"
+      link: "/bg-bul/technology/index.html"
+  #ALL FEATURES PAGE
+  features:
+    page_title: "Изцяло новият Infiniti Q50 - Всички характеристики| Infiniti България"
+    page_description: "Официален уебсайт на Infiniti България: Открийте пълните характеристики на изцяло новия Infiniti Q50, вдъхновен израз на стил и лукс с повишена мощност, ефективност и модерни дигитални, аудио и защитни функции."
+    page_canonical: "/bg-bul/features/index.html"
+    header: "Пълни характеристики на изцяло новия Infiniti Q50"
+  #HANDRAISER MODAL
+  updates:
+    page_title: "Изцяло новият Infiniti Q50 – Абониране за новини | Infiniti България"
+    page_description: "Infiniti USA Official Site: Join the All-New Infiniti Q50 mailing list and try Infiniti Personal Assistant free for 90 days."
+    page_canonical: "/bg-bul/updates/index.html"
+    header: "Join the All-New 2014 Infiniti Q50 mailing list"
+  handraiser:
+    request: "Be One Of The First To Know"
+    tagline: "Join the All-New Infiniti Q50 mailing list and enjoy a complimentary, 90-day trial of Infiniti Personal Assistant.<sup></sup>"
+    info: "Join the Infiniti Q50 mailing list for preferred access to the latest on this breakthrough sedan. Then experience the refined service of Infiniti Personal Assistant free for 90 days. To take advantage of this unprecedented opportunity, simply register for Infiniti G updates by filling in the fields below."
+    details: 
+      label: "View Details"
+      link: "/bg-bul/join/"
+    required: "Required*"
+    field_firstname: "First Name"
+    field_lastname: "Last Name"
+    field_email: "Email"
+    field_zipcode: "ZIP Code"
+    field_submit: "JOIN MAILING LIST"
+    link_privacy: "Privacy Policy"
+    privacy: "Note: Your personal information is used for Infiniti communications purposes only. Providing your e-mail address allows Infiniti and its Retailers to contact you with marketing information about our products and services. This permission supersedes any national Do Not Call lists."
+    disclaimer:
+      text1: "Click the link for Terms and to register: "
+      link1: "http://www.infinitipersonalassistant.com/Q50-event"
+      text2: ", if you do not receive an email confirmation. Available for US customers only and while supplies last.<br />Terms and Conditions apply. Infiniti Personal Assistant is complimentary the first 48 months; paid subscription required thereafter. Infiniti Personal Assistant communicates through a cellular network. Connection and signal strength may vary and be limited by location. Always give your full attention to driving. Avoid operating IPA in such a way that you can be distracted during vehicle operation. For additional information, please visit "
+      link2: "http://www.infinitipersonalassistant.com/tc"
+      not_share_information: "We do not share your information with any other company."
+    thankyou: "Thank You"
+    thankyou_copy: "Thank you for your interest in the All-New Infiniti Q50. As more details are revealed about the Infiniti Q50, we'll keep you updated. We appreciate your interest and look forward to sharing more about this vehicle in the future."
+    next_step_title: "Suggested Next Steps"
+    next_step_link: "Visit InfinitiUSA.com"
+    stay_connected_title: "Stay Connected"
+    view_details:
+      copy1: "Join the Infiniti Q50 mailing list for preferred access to the latest on this breakthrough sports sedan. Then experience the refined service of Infiniti Personal Assistant for 90 days, with our compliments. You’ll enjoy live, 24-hour access to a team of professional personal assistants, ready to help with:"
+      bullet1: "Directory assistance"
+      bullet2: "Traffic conditions"
+      bullet3: "Sports scores and stats"
+      bullet4: "Dining recommendations/reservations"
+      bullet5: "Movie times/reviews"
+      bullet6: "Additional services"
+      copy2: "To take advantage of this unprecedented opportunity, simply register for Infiniti Q50 updates by filling in the fields below. Once your registration has been processed, you will receive a link and further instructions on how to activate your 90-day trial."
+  #GALLERY PAGE
+  gallery:
+    page_title: "Изцяло новият Infiniti Q50 - Изображения и 360° изглед | Infiniti България"
+    page_description: "Официален уебсайт на Infiniti Европа: Вижте ексклузивни изображения и 360&deg; изгледи на изцяло новия Infiniti Q50."
+    page_canonical: "/bg-bul/gallery/index.html"
+    page_interior_canonical: "/bg-bul/gallery/interior.html"
+    page_threesixty_canonical: "/bg-bul/gallery/360s.html"
+    threesixty:
+      header: "Екстериор 360&deg;"
+      copy: "&lt;&nbsp;Плъзнете с пръст, за да завъртите&nbsp;&gt;"
+    panorama:
+      header: "360&deg; панорама"
+      copy: "Докоснете, за да започнете"
+  #DISCLAIMERS
+  disclaimers:
+    microsite: "Всички илюстрации, изображения и спецификации в тази публикация се базират на концептуалния автомобил и отразяват най-новата информация за продукта към момента на печат. Тъй като това превозно средство все още е прототип и заключителният дизайн, оборудване и аксесоари не са определени, действителните серийни автомобили могат да се различават от показаните. Разгледайте истински сериен автомобил във вашия Infiniti Център преди покупката. Наличността и времето на доставка за отделните модели или оборудване могат да се различават."
+    design:
+      luxury_seating: "Отнася се само за предните седалки."
+    performance:
+      personalized_drive_modes: "Само за демонстрационни цели. Тази демонстрация не показва действителния радиус на завиване. Наличните режими зависят от избора на двигател и скоростна кутия."
+      engines: "Крайните стойности на CO2 емисиите подлежат на хомологация. Стойностите на CO2 емисиите се различават според двигателя, скоростната кутия и размера на гумите."
+    technology:
+      digital_environment: "Изображенията на екрана са симулирани.  Дигиталният интерфейс и дизайнът на екрана на пред-производственият автомобил, които виждате, могат да се различават от действителният производствен автомобил."
+      intouch: "Винаги се отнасяйте сериозно към шофирането. Използвайте услугите на InTouch&#8482; Apps само когато това е безопасно. За активиране на услугата е необходимо споразумение за абонамент. Трябва да имате съвместим смартфон, като мрежовото покритие може да е ограничено в някои области.   GPS картите може да не са еднакво подробни във всички област или да не отразяват текущите пътни наредби. Някои приложения и услуги, включително Google Points of Interest и Send to Car, се предоставят от независими компании, които не са част от Infiniti. Ако доставчикът на приложението или услугата прекрати/ограничи услугата, услугата може да бъде прекъсната или спряна без предупреждение или отговорност от Infiniti и/или агентите на компанията. Infiniti не носи отговорност за всякакви замени или обновления на оборудване или приложения или свързаните с това разходи, които могат да бъдат необходими поради изменения в приложението или услугата.  Наличността на InTouch&#8482; Apps може да се различава в отделните страни.   Прилагат се общите условия на споразумението за абонамент.  В сила са стандартните цени за текстови съобщения и/или мобилни данни за комуникациите, които получавате по електронната поща или като текстови съобщения."
+      connection: "Driving is serious business. Only use Infiniti Connection<sup>&trade;</sup> and Infiniti Connection Plus services when safe to do so. Subscription Agreement required to enroll. Initial 12 months, beginning on your date of purchase, included complimentary. Subsequently, your credit card (if on file) will be charged at the then current subscription rate and your service will continue for 1 year periods under the terms of your Subscription Agreement, unless cancelled. Services require compatible 2G GSM/GPRS cellular network. Cellular network and vehicle services, including Google Calendar<sup>&trade;</sup>, provided by independent companies not within Infiniti’s control. Cellular network not available in all areas. 2G cellular network not available in all areas. In areas with 2G network coverage, signal strength may vary and/or not be available at all times. Cellular technology is evolving, and changes to cellular networks may affect future service functionality. Ask your cellular network carrier for details on anticipated 2G network availability in your area and how this may affect your planned usage. Should a cellular provider or service provider terminate/further restrict service, service may be suspended or terminated without notice or liability to Infiniti and its affiliates and agents. Infiniti not responsible for any equipment replacement or upgrades, or associated costs, that may be required for continued operation due to service changes.Terms and conditions of Subscription Agreement apply. Standard text rates and/or data usage may apply to communications received by email or SMS/text message."
+      backup_collision: "BCI не може да засече всеки един обект, като също така работи до определена скорост. Винаги се оглеждайте, преди да потеглите. Да не се използва вместо правилните процедури за движение на заден ход. Винаги се обръщайте, за да видите какво има зад вас, когато се движите на заден ход. Проверете ръководството на потребителя за повече подробности. * Предлага се единствено с автоматична скоростна кутия."
+      monitor: "AVM с разпознаване на движещи се обекти не може да елиминира напълно &#8222;слепите петна&#8220; и може да не успее да засече всеки един обект. Системата за разпознаване на движещи се обекти работи при скорост на превозните средства под 8 км/ч. Винаги се оглеждайте, преди да потеглите. Да не се използва вместо правилните процедури за движение на заден ход. Винаги се обръщайте, за да видите какво има зад вас, когато се движите на заден ход. Разпознаване на движещи се обекти при скорост на автвомобила под 8 км/ч. "
+      lane_depart: "Системата за предупреждение при напускане на лентата (LDP - Lane Departure Prevention) работи само когато пътят има ясна и видима маркировка. Трябва да спазвате ограниченията на скоростта. Вижте ръководството на потребителя за повече подробности."
+      lane_depart2: "Системата за предотвратяване на напускане на лентата (LDP – Lane Departure Prevention) работи само когато пътят има ясна и видима маркировка. Трябва да спазвате ограниченията на скоростта. Вижте ръководството на потребителя за повече подробности."
+      blind_spot: "Системите за предотвратяване на &#8222;сляпо петно&#8220; (BSI – Blind Spot Intervention) и предупреждение за &#8222;сляпо петно&#8220; (BSW – Blind Spot Warning не са заместител на правилните процедури за смяна за лентата. Системите не могат да предотвратят удари с други превозни средства или злополуки. Те може да не успеят да засекат всяко едно превозно средство или обект около вас."
+      predict_collision: "Технологията за предсказване и предупреждение за челен сблъсък е предназначена да ви предупреди за предстоящ сблъсък – тя не може да го предотврати. Трябва да спазвате ограниченията на скоростта. Винаги карайте безопасно."
+      forward_braking: "Системата за аварийно задействане на спирачките при опасност от челен сблъсък не може да предотврати инциденти в резултат от невнимание или опасни техники на шофиране. Тя може да не предупреди или да не включи спирачките при определени условия. Трябва да спазвате ограниченията на скоростта. Винаги карайте безопасно."
+      air_bags: "Въздушните възглавници са само допълнителна ограничителна система; винаги слагайте предпазния колан. Дори ако има датчик за класифициране на пътника, обърнатите назад детски ограничители не трябва да се поставят на предната седалка. Също така всички деца под 12 години трябва да се возят на задната седалка, правилно закрепени с детски ограничители, детски седалки или предпазни колани според техния ръст. Въздушните възглавници се надуват само при определени злополуки; вижте ръководството на потребителя за повече подробности."
+      seat_belt: "Винаги слагайте предпазния си колан и не шофирайте след употреба на алкохол. ©2013 INFINITI Бизнес звено на Nissan North America, Inc"
+      distance_control: "Асистентът за контрол на дистанцията помага за спазване на дистанцията до автомобила отпред при определени условия. Той не е система за предотвратяване на катастрофи. Ако спирачките не бъдат натиснати, може да се стигне до злополука."
+      cruise: "Интелигентният круз контрол (при всякакви скорости) не е система за предотвратяване или предупредителен механизъм за катастрофи. Необходимо е известно натискане на спирачките. Ако спирачките не бъдат натиснати, може да се стигне до злополука."
+  #404
+  four-zero-four:
+    page_title: "Изцяло новият Infiniti Q50 - 404 | Infiniti България"
+    page_description: "Официален уебсайт на Infiniti България: Представяме ви изцяло новия Infiniti Q50. Разгледайте дизайна, динамиката и технологията на този революционен нов модел."
+    page_canonical: "/bg-bul/404.html"
+    intro:
+      header: "Извинете ни"
+      copy: "Изглежда, че страницата, която търсите, не съществува. Щракнете върху бутона по-долу или изберете някоя от връзките, за да се върнете назад."
+      button: "Посетете микросайта на Q50"
+    

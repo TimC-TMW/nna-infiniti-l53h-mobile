@@ -1,0 +1,42 @@
+<!-- sub nav -->
+<% if @current_nav < 4 %>
+<nav class="sub wf clearfix">
+    <ul>
+        <% if @current_nav == 0 || @current_nav != 1 %>
+        <li class="design feature-box">
+            <% link_to I18n.t("nav.design.link") do %>
+            <%= I18n.t("subnav.design.label") %> <span><%= I18n.t("subnav.design.label2") %></span>
+            <% end %>
+        </li>
+        <% end %>
+         <% if @current_nav == 0 || @current_nav != 2 %>
+        <li class="performance feature-box">
+            <% link_to I18n.t("nav.performance.link") do %>
+            <%= I18n.t("subnav.performance.label") %> <span><%= I18n.t("subnav.performance.label2") %></span>
+            <% end %>
+        </li>
+        <% end %>
+         <% if @current_nav == 0 || @current_nav != 3 %>
+        <li class="technology feature-box">
+            <% link_to I18n.t("nav.technology.link") do %>
+            <%= I18n.t("subnav.technology.label") %> <span><%= I18n.t("subnav.technology.label2") %></span>
+            <% end %>
+        </li>
+        <% end %>
+    </ul>
+    <ul>
+        <li class="features button divider">
+            <%= link_to I18n.t("subnav.features.label"), I18n.t("nav.features.link") %>
+        </li>
+		<li class="models button">
+            <%= link_to I18n.t("subnav.models.label"), I18n.t("nav.models.link") %>
+        </li>
+        <li class="gallery button">
+            <%= link_to I18n.t("subnav.gallery.label"), I18n.t("nav.gallery.link") %>
+        </li>
+		<li class="colors button">
+            <%= link_to I18n.t("subnav.colors.label"), I18n.t("nav.colors.link") %>
+        </li>
+    </ul>
+</nav>
+<% end %>

@@ -1,0 +1,53 @@
+<!-- footer -->
+<footer class="main wf">
+	<div class="disclaimers clearfix">
+		<h3 class="visuallyhidden"><%= I18n.t("footer.disclaimers.header") %></h3>
+		<ul>
+			<li><a class="view-page-disclaimers" href="#"><%= I18n.t("footer.disclaimers.label") %><span><%= I18n.t("footer.disclaimers.plus") %></span></a>
+				<div id="page-disclaimers">
+					<ul>
+						<li> <%= I18n.t("disclaimers.microsite") %> </li>
+						<%= yield_content :pagedisclaimers %>
+					</ul>
+				</div></li>
+		</ul>
+	</div>
+	
+	<div class="follow clearfix">
+		<div class="foot-center">
+		<h3><%= I18n.t("footer.follow.label") %></h3>		
+			<ul>				
+				<li><a class="button_facebook ir" href="<%= I18n.t("footer.follow.facebook_link") %>" target="_blank"><%= I18n.t("footer.follow.facebook") %><%= image_tag "common/bg/transparent.gif" %></a></li>
+				<li><a class="button_twitter ir" href="<%= I18n.t("footer.follow.twitter_link") %>" target="_blank"><%= I18n.t("footer.follow.twitter") %><%= image_tag "common/bg/transparent.gif" %></a></li>
+				<li><a class="button_you_tube ir" href="<%= I18n.t("footer.follow.you_tube_link") %>" target="_blank"><%= I18n.t("footer.follow.you_tube") %><%= image_tag "common/bg/transparent.gif" %></a></li>		
+			</ul>
+		</div>		
+	</div>
+	
+	<div class="share clearfix">
+		<div class="foot-center">
+		<h3><%= I18n.t("footer.share.label") %></h3>
+		<div class="addthis_toolbox" <%= yield_content :addthis %>>
+			<ul>
+				<li><a class="addthis_button_email ir" href="http://www.addthis.com/bookmark.php"><%= I18n.t("footer.share.email") %><%= image_tag "common/bg/transparent.gif" %></a></li>
+				<li><a class="addthis_button_facebook ir"><%= I18n.t("footer.share.facebook") %><%= image_tag "common/bg/transparent.gif" %></a></li>
+				<li><a class="addthis_button_twitter ir"><%= I18n.t("footer.share.twitter") %><%= image_tag "common/bg/transparent.gif" %></a></li>				
+			</ul>
+			</div>
+		</div>
+		<script src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4feb315c254fd382" type="text/javascript"></script>
+	</div>
+	<div class="backto clearfix">
+		<h3 class="visuallyhidden"><%= I18n.t("footer.back.header") %></h3>
+		<ul>
+			<li> <%= link_to I18n.t("footer.back.label"), I18n.t("footer.back.link"), :query=>"next=Q50_Micro.Logo.Home_Page.Home" %> </li>
+		</ul>
+	</div>
+	<div class="legal clearfix">
+		<h3 class="visuallyhidden"><%= I18n.t("footer.feedback.header") %></h3>
+		<ul>					
+			<li> <%= link_to I18n.t("footer.privacy.label"), I18n.t("footer.privacy.link"), :target => "_blank" %> </li>
+			<li> <%= link_to I18n.t("footer.microdisclaimer.label"), I18n.t("footer.microdisclaimer.link"), :class => "microsite-disclaimer" %> </li>
+		</ul>
+	</div>
+</footer>

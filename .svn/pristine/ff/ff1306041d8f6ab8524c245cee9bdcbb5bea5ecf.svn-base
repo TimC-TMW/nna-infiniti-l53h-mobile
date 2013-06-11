@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://preview-g-sedan.criticalmass.com/" />
+<title>AllFeatures</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">AllFeatures</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/ml53h/en/all-features.html</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=All Features</td>
+	<td>All Features</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Seductive Design&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Agile Performance&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Innovative Technology&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Design Overview&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Exterior Pano&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;SIG Headlights&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Zero Gravity Seat&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Cockpit / IP&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Interior Pano&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Performance Overview&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Handling&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Sport Model&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Engine Story&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Hybrid&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Steer-By-Wire&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Steer-By-Wire&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Driver Modes&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Digital Assistance&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;IT GEN 5&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Infiniti Connection&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;Bose Audio&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;BCI&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>css=img[alt=&quot;AVM&quot;]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//img[@alt='Driver Modes'])[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Design Overview</td>
+	<td>Design Overview</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Exterior Pano</td>
+	<td>Exterior Pano</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=SIG Headlights</td>
+	<td>SIG Headlights</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Zero Gravity Seat</td>
+	<td>Zero Gravity Seat</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Cockpit / IP</td>
+	<td>Cockpit / IP</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Interior Pano</td>
+	<td>Interior Pano</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Performance Overview</td>
+	<td>Performance Overview</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Handling</td>
+	<td>Handling</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Sport Model</td>
+	<td>Sport Model</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Engine Story</td>
+	<td>Engine Story</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Hybrid</td>
+	<td>Hybrid</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Steer-By-Wire</td>
+	<td>Steer-By-Wire</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Driver Modes</td>
+	<td>Driver Modes</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Digital Assistance</td>
+	<td>Digital Assistance</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=IT GEN 5</td>
+	<td>IT GEN 5</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Infiniti Connection</td>
+	<td>Infiniti Connection</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=Bose Audio</td>
+	<td>Bose Audio</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=BCI</td>
+	<td>BCI</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>link=AVM</td>
+	<td>AVM</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>xpath=(//a[contains(text(),'Driver Modes')])[2]</td>
+	<td>Driver Modes</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>

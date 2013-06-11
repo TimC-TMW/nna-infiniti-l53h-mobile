@@ -1,0 +1,337 @@
+@import "compass";
+
+/* mixins use to get the font you want */
+@mixin default-font-n4{
+  font-family:"MetaPro-n4", "MetaPro", arial, verdana, sans-serif;
+  font-style:normal;
+  font-weight:400;
+}
+@mixin default-font-i4{
+  font-family:"MetaPro-i4", "MetaPro", arial, verdana, sans-serif;
+  font-style:italic;
+  font-weight:400;
+}
+@mixin default-font-n6{
+  font-family:"MetaPro-n6", "MetaPro", arial, verdana, sans-serif;
+  font-style:normal;
+  font-weight:600;
+}
+@mixin default-font-i6{
+  font-family:"MetaPro-i6", "MetaPro", arial, verdana, sans-serif;
+  font-style:italic;
+  font-weight:600;
+}
+
+
+
+
+
+/* class helpers */
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+.ruleline {
+    width: 93%;
+    margin: auto;
+    margin-top:11px;
+    margin-bottom: 11px; 
+    border-bottom:1px solid #72767d;
+}
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+/*------------------------------ WEB FONTS ---------------*/
+.wf-loading .wf{ visibility:hidden !important; }
+.wf-inactive .wf{ visibility:visible !important; }
+.wf-active .wf{ visibility:visible !important; }
+
+/*------------------------------ TEMPLATE ---------------*/
+html{height:100%; font-size:12px; font-family:arial,helvetica,verdana,sans-serif; background-color:#000; line-height: 1;}
+  body{height:100%; -webkit-text-size-adjust:100%; background-color:#000;}
+    #wrapper{width:320px; height:100%; position:relative; margin:0 auto;}
+
+/*------------------------------ MAIN HEADER ---------------*/
+header.main{width:100%; height:30px; background:image-url("common/header/header_bg.png") no-repeat; background-size:cover;}
+  header.main a.logo{background:image-url("common/header/infiniti-usa.png") no-repeat; background-size:cover; height:16px; width:139px; position:absolute; top:7px; left:17.5px;}
+  header.main a.sign_up{@include default-font-n4; background:image-url("common/header/btn_get-updates.png") no-repeat 0 -4px; background-size:cover; height:27px; width:138px; position:absolute; top:1px; right:7px; color:#fff; text-transform:uppercase; font-size:13px; line-height:32px; text-decoration:none; text-indent:16px;}
+
+/*------------------------------ PRIMARY NAV ---------------*/
+nav.main {width:320px; height:30px; position:absolute; top:30px; left:0; background:image-url("common/nav/nav_bg.png") no-repeat; background-size:cover; padding-top:10px; z-index:10;}
+  nav.main li{float:left; height:24px;margin-left:8px;}
+    nav.main a{@include default-font-n4; display:block; text-transform:uppercase; text-decoration:none; color:#000; font-size:13px; height:20px; line-height:22px; text-align:center;}
+    nav.main .current{background:image-url("common/nav/current_bg.png") repeat-x; background-size:11px auto;}
+    nav.main .nav_home{margin-left:0;}      
+      nav.main .current a{@include default-font-n6;}
+      nav.main .nav_home a{background:image-url("common/nav/home.png") no-repeat center; background-size:8px auto; width:32px;}
+      nav.main .nav_design{width:68px;}
+      nav.main .nav_performance{width:88px;}
+      nav.main .nav_technology{width:88px;}
+      nav.main .nav_features{width:214px;}
+      nav.main .nav_updates{width:91px;}
+      nav.main .nav_gallery{width:101px;}
+      nav.main .nav_gallery_int{width:101px;}
+      nav.main .nav_gallery_360{width:50px;}
+
+
+
+
+      
+      
+/*------------------------------ SUB NAV ---------------*/
+nav.sub{padding:15px 0;}
+#page_home nav.sub{padding:0;}
+  nav.sub ul .feature-box a{margin-left:17px; display:block; width:184px; padding-left:101px; height:54px; padding-top:17px; background-size:cover; text-decoration:none; font-size:18px; color:#000; @include default-font-n6; text-transform:uppercase; text-indent:20px; color:#333333; margin-bottom:2px;}    
+    nav.sub ul .feature-box a span {display:block;}
+    nav.sub ul .design a {background:image-url("home/seductive-design.png")}
+    nav.sub ul .performance a {background:image-url("home/agile-performance.png")}
+    nav.sub ul .technology a {background:image-url("home/intuitive-technology.png")} 
+  nav.sub ul .button {float:left; margin-top:9px; margin-left:11px; width:93%;}
+    nav.sub ul .button a{margin:auto; display:block; width:278px; height:37px; line-height:38px; text-decoration:none; font-size:14px; color:#fff; @include default-font-n6; text-transform:uppercase; text-align:center; background:image-url("home/button_grad_bg.png") repeat-x; background-size:1px 100%}
+    nav.sub ul .divider {padding-bottom:11px; border-bottom:1px solid #8c8685}
+    nav.sub ul .divider + * { margin-top:11px;}
+      
+/*------------------------------ MAIN FOOTER ---------------*/
+footer{background-color:#f4f4f4; background-image:image-url("common/footer/footer_bg.png"); background-repeat:no-repeat; background-size: auto 12px; padding: 0 12px;}
+  footer div.clearfix {padding:16px 0px; border-bottom: 1px solid #cccccc;}
+    footer a{display:block; text-decoration:none; font-family:arial, verdana, sans-serif; color:#333333; font-size:11px;float:left;}
+    footer .disclaimers a {display:inline; text-decoration: underline; float: none;}
+
+    footer .disclaimers a.view-page-disclaimers{position:relative; display: block; text-decoration: none; width: 100%; text-align: center;}
+      footer .disclaimers span{display:inline-block; position:relative; font-size:15px; color:#666666; top:1px;}
+    footer .share h3{display:inline; @include default-font-n4; font-size:14px; line-height:20px; margin: 0 6px 0 0;}
+    footer .share a{display:block; width:20px; height:20px; background-image:image-url("common/footer/social.png"); background-size: auto 20px; background-repeat:no-repeat; margin: 0 5px;}
+      footer .share a.addthis_button_email{background-position: -117px 0;}
+      footer .share a.addthis_button_facebook{background-position: -0px 0;}
+      footer .share a.addthis_button_twitter{background-position:-29px 0;}
+      footer .share a.addthis_button_google_plusone_share{background-position: -87px 0;}
+	footer .follow h3{display:inline; @include default-font-n4; font-size:14px; line-height:20px; margin: 0 6px 0 0;}
+    footer .follow a{display:block; width:20px; height:20px; background-image:image-url("common/footer/social.png"); background-size: auto 20px; background-repeat:no-repeat; margin: 0 5px;}      
+      footer .follow a.button_facebook{background-position: -0px 0;}
+      footer .follow a.button_twitter{background-position:-29px 0;}
+      footer .follow a.button_you_tube{background-position: -59px 0;}
+    /*footer .backto a{padding-left: 89px;}*/
+    footer .legal a{font-size:10px;letter-spacing: -0.2px; padding: 0 3px; float: none; margin-bottom: 20px;}  
+    .foot-center {margin:0 auto; text-align: center;}
+    .foot-center ul {display: inline-block;}
+    .foot-center ul li {display: inline;}
+    .addthis_toolbox {display: inline-block;}
+    .backto {text-align: center;}
+    .backto ul {display: inline-block;}
+    .legal {text-align:center;}
+/*------------------------------ HOMEPAGE ---------------*/
+section#home{width:320px; height:619px; background:image-url("home/home_bg.jpg") no-repeat; background-size:cover;}
+  section#home h1{@include default-font-n4; font-size:12px;padding-top:13px; margin:0 0 1px 19px;}
+    section#home h1 span{@include default-font-n6; font-size:19px; text-transform:uppercase; display:block; margin-top:3px;}
+  section#home p {@include default-font-n4; font-size:11px; color:#333333;margin:0px 0 114px 19px;}
+  section#home h2 {@include default-font-n6; font-size:15px; margin:0px 0 6px 19px; color:#333333;}  
+              
+/*------------------------------ GLOBAL INNER STYLES ---------------*/
+section{background:#fff;}
+article{border-bottom: 1px solid #d1d0cf; margin:0 10px; padding-bottom:20px;}
+  article#intro{border-bottom: none; padding:54px 0 0 162px; margin:0;}
+    article#intro h1{@include default-font-n6; font-size:20px; text-transform:uppercase; margin-bottom:6px; right: 12px; position: relative;}
+    article#intro p{@include default-font-n4; font-size:14px; color:#333333; position: relative;
+right: 12px;}
+  article h2{@include default-font-n6; font-size:13px; text-transform:uppercase; padding-top:18px; margin-bottom: 9px;}
+  article p{line-height:17px;}
+  article img, article video{margin-bottom:8px;}
+
+/*------------------------------ DESIGN ---------------*/
+#page_design article#intro{height:95px; background:image-url("design/intro_bg.jpg") no-repeat; background-size:cover;}
+#page_design #exterior-360-container .hint {text-align:center;}
+#page_design #exterior-360-container{width:300px; height:169px; position:relative; background:image-url("gallery/360/03.jpg"); background-size:cover; margin-bottom:8px;}
+#page_design #exterior-360-container img{width:300px;}
+#page_design #exterior-360-container .hint{position:absolute; bottom: 18px; width:300px; display:none;}
+#page_design #exterior-360-container h2{@include default-font-n6;font-size:16px;margin:0; padding:0; text-transform:none; color:#fff;}
+#page_design #exterior-360-container p{@include default-font-i6;font-size:14px;margin:0; padding:0; color:#eee;padding:0;}
+
+/*------------------------------ PERFORMANCE ---------------*/
+#page_performance article#intro{height:95px; background:image-url("performance/intro_bg.jpg") no-repeat; background-size:cover;}
+
+/*------------------------------ TECHNOLOGY ---------------*/
+#page_technology article#intro{height:95px; background:image-url("technology/intro_bg.jpg") no-repeat; background-size:cover; }
+  #page_technology .safety-shield-buttons a
+  {
+   
+    min-height: 42px; 
+
+    line-height: 1.2;
+    @include default-font-n6;  
+    font-size:15px; 
+
+    text-decoration:none; 
+    color:#fff;
+    padding-left: 117px;
+    padding-top: 25px;
+    padding-bottom: 11px;
+    background-position: -80px 0;
+    padding-right: 10px;
+    margin-top: 9px;
+   }
+    #page_technology .safety-shield-buttons a.ss1{display:block; background-image:image-url("technology/safety-shield/risk-has-not-yet-appeared.png");}
+    #page_technology .safety-shield-buttons a.ss2{display:block; background-image:image-url("technology/safety-shield/risk-has-appeared.png");}
+    #page_technology .safety-shield-buttons a.ss3{display:block; background-image:image-url("technology/safety-shield/collision-may-occur.png");}
+    #page_technology .safety-shield-buttons a.ss4{display:block; background-image:image-url("technology/safety-shield/collision-unavoidable.png");}
+    #page_technology .safety-shield-buttons a.ss5{display:block; background-image:image-url("technology/safety-shield/collision.png");}
+
+/*------------------------------ ALL FEATURES ---------------*/
+#page_technology #shield article{padding-bottom:10px; border:none;}
+#page_technology #shield article.last{}
+#page_technology #shield h2{margin-bottom:5px; padding:0; @include default-font-n6; font-size:15px;}
+#page_technology #shield h3{margin-bottom:5px; padding:10px 0 0 0; @include default-font-n6; font-size:14px;}
+#page_technology #shield p{margin-bottom:10px;}
+#page_technology #shield article img{margin-bottom:10px; padding-top:15px; border-top:solid 1px #d1d0cf;}
+#page_technology #shield p.nomargin{margin-bottom:0px;}
+#page_technology #shield article#intro{height:83px; background:image-url("technology/safety-shield/intro_bg.jpg") no-repeat; background-size:cover;}
+  #page_technology #shield article#intro{margin-bottom:20px; padding:66px 0 0 28px;}
+  #page_technology #shield article#intro h1{color:#fff; width:140px; }
+  #page_technology #shield article#intro a{color:#fff; text-decoration:none; font-size:11px;}
+#page_technology #shield nav.safety-shield ul{padding-bottom:15px; text-align:center;}
+	#page_technology #shield nav.safety-shield ul li{display:inline-block;}
+		#page_technology #shield nav.safety-shield ul li a{@include default-font-n6; text-decoration:none; color:#000;}
+	#page_technology #shield nav.safety-shield ul li:nth-child(2){margin:0 7px; padding:0 10px; border-left:solid 1px #d1d0cf; border-right:solid 1px #d1d0cf;}
+
+/*------------------------------ ALL FEATURES ---------------*/
+#page_features section{padding-top:38px;}
+  #page_features article h2{@include default-font-n4; font-size:18px; line-height:29px;}
+  #page_features article li{clear:both;}
+  #page_features article img{float:left; margin-bottom:15px;}
+  #page_features article a{@include default-font-n4; font-size:14px; text-decoration:none; display:block; height:52px; position:relative; color:#000;}
+    #page_features article a h3{position: absolute; top:0; left:122px; line-height:21px;}
+      /* override for 2 line text */
+      #page_features article li.backup-collision-intervention a h3{line-height:15px; padding-top:12px;}    
+
+/*------------------------------ UPDATES ---------------*/
+#page_updates article#intro{height:132px; background:image-url("updates/intro_bg.jpg") no-repeat; background-size:cover;}
+#page_updates #updates {background:image-url("updates/sign-up-background.png") no-repeat; background-color: #fff; background-size:cover; width: 320px; height: auto;}
+#page_updates article {border: none;}
+
+/*----- HANDRAISER ------------------- */
+#updates_form{width:300px; padding:0px 0 0px 0px; font-size:14px; line-height:120%; color:#000;}
+  #updates_form h2{@include default-font-n4; margin-bottom:13px; text-transform:uppercase; font-size:18px;}
+  #updates_form h3{margin-bottom:13px; font-size:13px;}
+  #updates_form h4{@include default-font-n4; margin-bottom:13px; font-size:11px; text-transform:uppercase; color:#333;}
+  #updates_form p{line-height:17px; clear:both; margin-bottom:13px; font-size: 12px;}
+    #updates_form p small{font-size:11px; line-height:9px;}
+    #updates_form p small a{color: #000000;}
+  #updates_form ol{}
+    #updates_form ol li{min-width:183px; max-width:265px; margin-bottom:15px; float:left; position:relative;}
+      #updates_form ol li div.form_error{width:171px; height:51px; padding:12px 40px 0 15px; position:absolute; z-index:5; left:-4px; bottom:45px; @include default-font-n4; font-size:13px; color:#29035A; background:image-url("common/bg/form-error.png") no-repeat 0 0;}
+        #updates_form ol li div.form_error strong{@include default-font-n6;}
+      #updates_form ol li label{@include default-font-n4; margin-bottom:3px; display:block;}
+      #updates_form ol li input[type="text"]{-webkit-appearance: none;border-radius: 0;}
+      #updates_form ol li input.highlighted{background-color:#DDD5E7; border-color:#4D2680;}
+      #updates_form ol li input{padding:3px 0 3px 3px; border:solid 1px #B3B3B3;}
+      #updates_form ol li input#uf_firstname{width:171px; margin-right:10px;}
+      #updates_form ol li input#uf_lastname{width:171px;}
+      #updates_form ol li input#uf_email{width:171px; margin-right:10px;}
+      #updates_form ol li input#uf_zipcode{width:76px;}
+      #updates_form ol li input#uf_submit{@include default-font-n4; width:140px; height:27px; margin:10px 0 0 0; padding:0; font-size:13px; text-align:center; line-height:27px; color:#FFF; border:none; cursor:pointer;}
+      #updates_form ol li a{width:120px; height:27px; margin:10px 0 0 0; padding:0; font-size:12px; text-align:center; line-height:27px; color:#FFF; border:none; cursor:pointer;}
+      #updates_form ol li input#uf_submit{background:transparent image-url("common/bg/sign-up-submit.png") no-repeat 74% center; -webkit-appearance: none;border-radius: 0;}
+      #updates_form ol li a{display:inline-block; color:#000;}
+#updates_form #thank_you{padding-bottom:40px; display:none;}
+  #updates_form #thank_you ul{overflow:hidden;}
+    #updates_form #thank_you ul li:first-child{padding-left:0; border-left:none;}
+      #updates_form #thank_you a.go_to{@include default-font-n4; height:26px; padding:0 25px 0 15px; display:inline-block; font-size:13px; text-decoration:none; line-height:27px; color:#FFF; background:image-url("common/bg/visit-infinitiusa.png") no-repeat scroll 70% center transparent; text-transform: uppercase;}
+      #updates_form #thank_you a#facebook, #updates_form #thank_you a#twitter, #updates_form #thank_you a#google{width:23px; height:24px; margin-right:5px; display:block; float:left; overflow:hidden; text-indent:-99999px; background:image-url("common/bg/stay-connected.png"); background-size: auto 23px;}
+      #updates_form #thank_you a#twitter{background-position:-30px 0;}
+      #updates_form #thank_you a#google{background-position:-61px 0;}
+      #updates_form #thank_you h3 {text-transform: uppercase; padding-top: 20px;}
+#updates_form .view-details span {font-size: 20px; cursor:pointer; color: #551A8B; display: inline-block; position: relative; top: 2px; width:15px; text-align: center;}      
+#updates_form .view-details p {font-size: 12px;}
+#updates_form .view-details a {color: #551a8b;}
+#updates_form .view-more-details {display:none; font-size: 11px;}
+#updates_form .view-more-details p {font-size: 11px;}
+
+/*------------------------------ DETAILS ---------------*/
+#page_details article#intro{height:132px; background:image-url("updates/intro_bg.jpg") no-repeat; background-size:cover;}
+#page_details article h2{@include default-font-n4; font-size:18px; line-height:29px;}
+.details {list-style:disc; padding: 10px 0 10px 30px;}
+.details li {padding: 0 0 5px 0}
+
+/*------------------------------ GALLERY ---------------*/
+#page_gallery #gallery{padding-top:37px;}
+#page_gallery #gallery.three-sixty{padding:47px 10px 0px 10px;}
+  #page_gallery #gallery.three-sixty article{border-bottom:0; } 
+#page_gallery article{margin:0;padding-bottom:5px}
+#page_gallery article img{margin:0;}
+#page_gallery #slider-container{margin-bottom:10px; width:320px; height:180px; overflow:hidden;}
+#page_gallery .slider, #page_gallery .slider li{width:320px; height:180px;}
+  #page_gallery .slider img{width:320px; height:180px;}
+  #page_gallery #slider-nav li{width:94px; height:53px; float:left;margin:0 6px 10px;}
+  #page_gallery #slider-nav img{width:94px; height:53px;}
+  #page_gallery #slider-bullets {position:absolute;bottom:10px; left:77px}
+  #page_gallery section.interior #slider-bullets {position:absolute;bottom:10px; left:112px}
+  #page_gallery #slider-bullets li{float:left;display:block; background:image-url("gallery/nav-bullets.png") no-repeat;background-position:0 1px; width:9px; height:8px; background-size: 21px auto; overflow:hidden; margin-right:5px;}
+  #page_gallery #slider-bullets li {background-color: transparent; border: 0; overflow: hidden; *text-indent: -9999px;}
+  #page_gallery #slider-bullets li:before {content: "";display: block;width: 0;height: 100%;}
+    #page_gallery #slider-bullets li.current{background-position: -14px 0;background-size: 24px auto}
+    
+#page_gallery #exterior-360, #page_gallery #interior-pano{text-align:center;}
+#page_gallery #exterior-360{width:300px; height:169px; position:relative; background:image-url("gallery/360/03.jpg"); background-size:cover; margin-bottom:8px; padding:0;}
+  #page_gallery #exterior-360 img{width:300px;}
+  #page_gallery #exterior-360 .hint{position:absolute; bottom: 18px; width:300px; display:none;}
+  #page_gallery #exterior-360 h2{@include default-font-n6;font-size:16px;margin:0; padding:0; text-transform:none; color:#fff;}
+  #page_gallery #exterior-360 p{@include default-font-i6;font-size:14px;margin:0; padding:0; color:#eee;padding:0;}
+
+#page_gallery #interior-pano h2{@include default-font-n6;font-size:16px;margin:0; padding:133px 0 0 0; text-transform:none; color:#fff;}
+#page_gallery #interior-pano p{@include default-font-i6;font-size:14px;margin:0; color:#eee;padding:0;}
+#page_gallery #exterior-360 a{display:block; text-decoration:none; color:#fff; width:300px; height:169px; background:image-url("gallery/360/00.jpg"); background-size:cover;}
+#page_gallery #interior-pano a{display:block; text-decoration:none; color:#fff; width:300px; height:185px; background:image-url("gallery/krpano/preview.jpg"); background-size:cover;}
+  
+/*------------------------------ PANO OVERLAY ---------------*/
+.pano-container{position:fixed;top:0;left:0;width:100%;height:100%;z-index:1000;display:none;overflow:hidden;
+  .close-pano{position:absolute;z-index:1100;top:15px;right:15px;width:15px;height:15px;background-size:15px 15px;overflow:hidden;text-indent:-9999px;background:image-url("gallery/btn-pano-close.png") no-repeat;}
+}
+.overlay{position:absolute;top:0;left:0;width:100%;height:100%;z-index:1000;}
+
+/*------------------------------ DISCLAIMERS ---------------*/
+#page-disclaimers{clear:both; line-height:15px; font-size:11px; color:#333; display:none; padding-top:10px;}
+  #page-disclaimers ul{padding: 0 15px;}
+  #page-disclaimers ul, #page-disclaimers li{list-style:disc}
+/*------------------------------ 404 PAGE ---------------*/
+#page-four-zero-four section {padding-top: 10px;}
+#page-four-zero-four article {padding: 0 15px 0 15px; border: none;}
+  #page-four-zero-four article h2 {@include default-font-n4; font-size:18px; line-height:29px; text-align: center;}
+  #page-four-zero-four article p {text-align: center; padding: 0 15px 0 15px;}
+  #page-four-zero-four article .line {padding: 15px 0 0 0;}
+  #page-four-zero-four article h3 {@include default-font-n4; text-align: center; font-size: 14px; text-transform: uppercase; padding: 20px 0 0 0;}
+    #page-four-zero-four article h3 a {text-decoration:none; color: #000;}
+  #page-four-zero-four article .all-features {padding: 15px 0 0 0;}
+#page-four-zero-four #container {background:image-url("404/404-background.jpg") no-repeat; background-size:cover; width: 320px; height: 575px;}
+#page-four-zero-four .button-container {padding: 10px 0 0 0;}
+#page-four-zero-four a.visit-microsite {background-attachment: scroll; background-clip: border-box; background-color: transparent; background-image: url("/media/404/visit-microsite-background.png"); background-origin: padding-box; background-position: 0 0; background-repeat: no-repeat; background-size: cover; color: #000; font-family: "MetaPro-n4","MetaPro",arial,verdana,sans-serif; font-size: 11px; font-style: normal; font-weight: 600; height: 32px; line-height: 32px; position: inline; text-decoration: none; text-indent: 16px; text-transform: uppercase; width: 262px; padding: 5px 60px 5px 60px;}
+/*------------------------------ HIDE "SITE FEEDBACK" BUTTON (SURVEY GIZMO) ON MOBILE ---------------*/
+#gizmoS img {display:none;}

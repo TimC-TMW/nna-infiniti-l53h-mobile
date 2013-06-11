@@ -1,0 +1,53 @@
+---
+crmpageid: 30950
+---
+<% @current_nav = 8 %>
+
+<% content_for :pageid do %>page_gallery<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("gallery.page_title") %></title>
+<meta name="description" content="<%= I18n.t("gallery.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("gallery.page_threesixty_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("gallery.page_threesixty_canonical") %>" addthis:description="<%= I18n.t("gallery.page_description") %>" addthis:title="<%= I18n.t("gallery.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<!-- page content -->
+<section id="gallery" class="wf three-sixty">
+	<article id="intro" class="visuallyhidden">
+		<h1><%= I18n.t("gallery.header") %></h1>
+	</article>
+	<article id="exterior-360">
+		<div class="threesixty">
+			<div class="hint wf">
+				<h2><%= I18n.t("gallery.threesixty.header") %></h2>
+				<p><%= I18n.t("gallery.threesixty.copy") %></p>
+			</div>
+		</div>
+	</article>
+	<article id="interior-pano">
+		<a href="#" id="launch-pano" data-pano-xml="gallery/krpano/tour.xml"> <h2><%= I18n.t("gallery.panorama.header") %></h2> <p><%= I18n.t("gallery.panorama.copy") %></p> </a>
+	</article>
+	<%= partial "partials/sub_nav" %>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageControllers.ThreeSixty();
+		jQuery.publish('/nna/crm/threesixtypageload');
+	}); 
+</script>
+<% end %>

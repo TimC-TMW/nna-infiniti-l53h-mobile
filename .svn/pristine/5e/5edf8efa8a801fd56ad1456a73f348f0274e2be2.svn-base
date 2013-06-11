@@ -1,0 +1,52 @@
+<!-- trims thee column -->  
+<ul class="trims">
+  <%# output all trims %>
+  <% @cfg.model.trims.each do |trim| %>
+    <li class="<%= trim.engine.engine_id %> <%= trim.drive.drive_id %>" data-id="<%= trim.code %>" data-price="<%= trim.price %>" data-title="<%= trim.title %>" data-url="<%= trim.url %>" data-drive-type="<%= trim.drive.title %>">
+      <%= image_tag "models/trims/#{trim.code}.png", :alt => "#{@cfg.model.title} #{trim.title}" %>
+      <h3><em><%= @cfg.model.title %></em> <%= trim.title %></h3>
+      <div class="price<% if onQuotePage %> collapsed<% end %>">
+	  <% @currLocale = [I18n.locale.to_s] %>
+	  <%= @currLocale  %>
+	   <%=  '["eu-enu"]' %>
+	   <%= @currLocale != '["eu-enu"]' %>
+	  <% if (@currLocale != '["eu-enu"]') %>
+        <div>
+          <span><%= I18n.t("models.starting") %></span>
+          <span><%= I18n.t("models.msrp") %></span>
+          <span class="moneys"><%= moneyFormat(trim.price, @cfg.currency) %><sup>*</sup></span>
+        </div> 
+		<% end %>
+      </div>
+      <div class="clearfix"></div>
+      <% if trim.parent != nil %>
+        <% if trim.drive.drive_id == 'AWD' %>
+          <div class="base awd">
+            <%= I18n.t("models.awdfeatures") %>
+          </div>
+        <% else %>
+          <div class="base rwd">
+            <%= I18n.t("models.rwdfeatures") %>
+          </div>
+        <% end %>
+      <% end %>
+      <ul class="features">
+        <% if trim.parent != nil %>
+          <%# trim has a parent trim and therefor inherits it's features %>
+          <% trim.features.each do |feature| %>
+              <li><%= feature.title %><% if feature.disclaimer != nil %> [*]<% end %></li>
+          <% end %>
+        <% end %>
+        <li class="cta">        
+          <div class="purpleBtn">
+            <% if onQuotePage %>
+              <button><%= link_to "<span>#{I18n.t("quote.cta")}</span>", queryStringify(I18n.t("nav.quote.link"),{:t => trim.code})%></button>
+            <% else %>
+              <button><%= link_to "<span>#{I18n.t("models.cta")}</span>","/models/#{trim.url}.html" %></button>
+            <% end %>
+          </div>
+        </li>
+      </ul>
+    </li>
+  <% end %>
+</ul>

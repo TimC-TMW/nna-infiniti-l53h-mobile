@@ -1,0 +1,12 @@
+<div id="content_colors" class="content">
+  <div id="content_colors_container">
+    <h3><%= I18n.t("colors.exterior_color") %> — <span></span></h3>
+    <ul class="swatches">
+      <% @cfg.model.colors.exterior.each do |color| %>
+        <li data-id="<%= color.color_id.downcase %>" data-label="<%= color.title %>">
+          <span></span><%= image_tag "colors/swatches/" + color.color_id.downcase + ".png", :alt => color.title %>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>

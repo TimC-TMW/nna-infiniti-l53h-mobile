@@ -1,0 +1,9 @@
+<% wrap_layout :shell do %>
+	<div id="pano-holder" class="pano-container"><a href="#" class="close-pano">Close</a><div id="pano" class='overlay'></div></div>
+	<div id="wrapper">
+		<%= partial "partials/header" %>
+		<%= partial "partials/primary_nav" %>
+		<%= yield_content :pagecontent %>
+		<%= partial "partials/footer" %>
+	</div>
+<% end %>

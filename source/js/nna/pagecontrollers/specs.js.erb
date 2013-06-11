@@ -1,0 +1,67 @@
+(function(NNA, $) {
+
+  NNA.PageControllers.Specs = NNA.PageController.extend({
+    init : function(options) {
+      this._super(options);
+
+      // init
+      this.initTabs();
+      this.initLists();
+
+      debug.info('NNA.PageControllers.Specs: initialized');
+    },
+    // Initialize tabs
+    initTabs: function(){
+      $('#specs #item_nav button').on('click', 'a', function(e){
+        e.preventDefault();
+
+        var $currTab = $(this).parents('button'),
+            sectionTitle = $(this).children('span').html(),
+            $section = $('#specs #lists ul[data-category=' + sectionTitle + ']');
+
+        // Show/hide appropriate sections
+        $section.show().siblings().hide();
+
+        if ($currTab.hasClass('item_nav_inactive')) {
+          $currTab.removeClass('item_nav_inactive').addClass('item_nav_active chevron').siblings().removeClass('item_nav_active chevron').addClass('item_nav_inactive');
+        }
+
+        // tracking tab switching
+        if($currTab.index() === 0) $.publish('/nna/models/specs');
+        else if($currTab.index() === 1) $.publish('/nna/models/packages');
+      });
+
+      // initial state
+      $('#specs #lists ul.packages').hide();
+      $.publish('/nna/models/specs');
+    },
+    // Initialize list/sub-list functionality
+    initLists: function(){
+      // Close all the lists be default
+      $('#specs #lists ul .list').addClass('closed');
+
+      // Initialize the expand/collapse functionality for lists
+      $('#specs #lists ul .list').on('click', 'header', function(){
+        var header = $(this);
+        var currList = header.parents('li.list');
+        var name = header.find('h3').text();
+        var list = header.parents('ul');
+        
+        // Expand/collapse list
+        currList.toggleClass('closed');
+
+        // tracking open and close
+        if(!currList.hasClass('closed')){
+          if(list.hasClass('specs')) $.publish('/nna/models/specs/expand', [name]);
+          else if(list.hasClass('packages')) $.publish('/nna/models/packages/expand', [name]);
+        }
+      });
+
+      // Open the first list for specifications and packages
+      $('#specs #lists ul.specs li').eq(0).children('header').trigger('click');
+      $('#specs #lists ul.packages li').eq(0).children('header').trigger('click')
+    }
+  });
+})(NNA, jQuery); 
+
+//private method `gsub' called for nil:NilClass

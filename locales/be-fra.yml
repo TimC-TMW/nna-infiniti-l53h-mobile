@@ -1,0 +1,353 @@
+be-fra:
+  #CONFIG
+  context_path: "/be-fra/"
+  country: "be"
+  language: "fra"
+  booth: "tdi-infinitibe"
+  metric: "metrics.infiniti.be"
+  #HEADER
+  header:
+    logo: "Infiniti"
+    link: "/be-fra/index.html"
+    signup: "MISES À JOUR"
+    signup_link: "http://mobile.infiniti.eu/fra-be/request_further_information?model=q50"
+  #NAV
+  nav:
+    home:
+      label: "ACCUEIL"
+      link: "/be-fra/index.html"
+    design:
+      label: "DESIGN"
+      link: "/be-fra/design/index.html"
+    performance:
+      label: "PERFORMANCE"
+      link: "/be-fra/performance/index.html"
+    technology:
+      label: "TECHNOLOGIE"
+      link: "/be-fra/technology/index.html"
+    features:
+      label: "ÉQUIPEMENTS"
+      link: "/be-fra/features/index.html"
+    gallery:
+      label: "LA GALERIE >"
+      link: "/be-fra/gallery/index.html"
+      ext_label: "Galerie ext."
+      int_label: "Galerie int."
+      int_link: "/be-fra/gallery/interior.html"
+      360_label: "360s"
+      360_link: "/be-fra/gallery/360s.html"
+    updates:
+      label: "MISES À JOUR"      
+  subnav:
+    design: 
+      label: "DESIGN"
+      label2: "SÉDUISANT >"
+    performance:
+      label: "PERFORMANCES ET"
+      label2: "AGILITÉ >"
+    technology:
+      label: "TECHNOLOGIE"
+      label2: "INTUITIVE >"
+    features:
+      label: "ÉQUIPEMENTS >"
+    gallery:
+      label: "LA GALERIE >"     
+  #FOOTER
+  footer:
+    disclaimers: 
+      header: "Page clause de non-responsabilité :"
+      label: "Afficher les pages d’avertissement"
+      plus: "+"
+    share:
+      label: "Partager"
+      email: "Partager par e-mail"
+      facebook: "Partager sur Facebook"
+      twitter: "Partager sur Twitter"      
+    follow:
+      label: "Suivre:"      
+      facebook: "Suivre sur Facebook"
+      facebook_link: "https://www.facebook.com/infinitieurope"
+      twitter: "Suivre sur Twitter"
+      twitter_link: "https://twitter.com/InfinitiEurope"
+      you_tube: "Suivre sur YouTube"
+      you_tube_link: "http://www.youtube.com/user/infinitieurope"
+    back:
+      header: "Autres destinations :"
+      label: "Infiniti Belgium"
+      link: "http://mobile.infiniti.eu/fra-be/"
+    fullsite:
+      label: "Afficher l’intégralité du microsite Q50"
+      link: "http://www.infiniti.be/fra/all-new-q50/"
+    feedback:
+      header: "Remarques et mentions juridiques :"
+    privacy:
+      label: "Mentions légales et politique de confidentialité"
+      link: "http://mobile.infiniti.eu/fra-be/legal_privacy"
+    microdisclaimer:
+      label: "Clause de non-responsabilité du microsite"
+      link: "#"
+  #HOME PAGE
+  home:
+    page_title: "Le tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : présentation du tout nouvel Infiniti Q50. Découvrez le design, les performances et la technologie de ce nouveau modèle révolutionnaire."
+    page_canonical: "/be-fra/index.html"
+    headline:
+      intro: "Présentation du tout nouvel Infiniti Q50"
+      q50: "Infiniti Q50"
+    tagline: "DISPONIBLE DES L'AUTOMNE 2013"
+    start: "Démarrer votre voyage:"
+  #DESIGN PAGE
+  design:
+    page_title: "Design du tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : découvrez le design séduisant du tout nouvel Infiniti Q50, une interprétation unique de l’élégance et du luxe."
+    page_canonical: "/be-fra/design/index.html"
+    intro:
+      header: "DESIGN SÉDUISANT"
+      copy: "Un design haut de gamme"
+    overview:
+      header: "Présentation du design"
+      copy: "Le design enfreint les règles plutôt que de les suivre, il défie les conventions plutôt que de s'en inspirer et il remet en cause les idées reçues plutôt que de les accepter. Il est libre d'adapter les formes et les fonctions pour de nouveaux usages - les vôtres."
+    exterior:
+      header: "Extérieur à 360&deg;"
+      copy: "Pour découvrir le Q50 sous tous les angles, glissez votre doigt sur l'écran pour le faire pivoter"
+    headlights:
+      header: "Phares adaptatifs"
+      copy: "Éclairage expressif – une signature visuelle aisément reconnaissable. Une expression unique en matière de design axée sur les doubles phares multi-modes à DEL, amplifiés par l'éclairage de jour. L'éclairage s'adapte de manière intelligente et s'allume à la tombée de la nuit ou, grâce au système SmartBeam Assist, éteint de manière indépendante les feux côté conducteur ou côté passager lorsque le système capte d'autres véhicules. Continuez votre route sans vous soucier de votre éclairage."
+    seating:
+      header: "Sièges haut de gamme"
+      copy: "Véritable révolution en matière de conception ergonomique, les sièges, méticuleusement travaillés, offrent un parfait maintien de la partie supérieure du corps et garantissent un confort optimal au conducteur. La seule chose que vous ressentez, c'est la relation intense avec votre véhicule. [1]"
+    interior:
+      header: "Un intérieur intuitif"
+      copy: "Intérieur intuitif – Finition en bois d'érable méticuleusement polie à la main. Intérieur rehaussé de cuir cousu main. Textures artistiquement équilibrées. Instruments d'affichage intelligent. Et chaque élément – pour des raisons pratiques ou de contrôle - est situé de manière intuitive. Le tout est parfaitement encadré par un design en double vague distinct qui garantit un confort optimal à chaque occupant. Bienvenue dans un monde de luxe entièrement pensé autour de vous, que vous soyez conducteur ou simple passager."
+    pano:
+      header: "Vue panoramique de l'intérieur"
+      copy: "Découvrez le luxe en 360 degrés. Cliquez ou appuyez pour démarrer. Faites glisser votre doigt sur l'écran tactile pour découvrir la vue panoramique de l'intérieur du tout nouvel Infiniti Q50. Pour effectuer un zoom avant, placez votre pouce et votre index sur l'écran et écartez-les.  Pour effectuer un zoom arrière, effectuez un geste de pincement avec le pouce et l'index."
+  #PERFORMANCE PAGE
+  performance:
+    page_title: "Performances du tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : découvrez les performances et l’agilité du tout nouvel Infiniti Q50, qui inclut des améliorations en matière de puissance et d’efficacité."
+    page_canonical: "/be-fra/performance/index.html"
+    intro:
+      header: "PERFORMANCES ET AGILITÉ"
+      copy: "Le luxe au-delà des conventions"      
+    handling:
+      header: "Aérodynamique parfaitement stable"
+      copy: "La conquête du vent – Considéré comme nuisible aux performances, le vent peut aujourd'hui être un allié. Grâce à la conception aérodynamique « zero-lift » exceptionnellement stable, les parties inférieure et supérieure de la carrosserie du Q50 dirigent parfaitement le flux d'air au-dessus, autour et en dessous du véhicule, offrant une manœuvrabilité stable et prévisible à n'importe quelle vitesse. Combinée à une suspension rigide, cette approche holistique en matière d'aérodynamique contribue à réduire les effets des turbulences du vent, même sur l'autoroute, pour une meilleure sensation en matière d'adhérence et de contrôle."
+      video: "maniabilité"
+    sportmodel:
+      header: "Modèle sport"
+      copy: "Le modèle Q50 sport – équipé d'un pare-chocs sport qui lui est propre et d'un déflecteur d'air unique. Les jantes Aluminium 19 pouces à branches doubles, chacune dotée de rotors et de pistons sport pour une puissance de freinage maximale, sont parfaitement intégrées avec leur design en forme d’arche. Mais avant tout ce véhicule Infiniti est conçu pour rouler. Installez-vous confortablement dans les sièges en cuir sport et actionnez les palettes au volant en magnésium pour découvrir sept dimensions avant-gardistes en matière de performance."
+      video: "sport"
+    engines:
+      header: "Moteurs"
+      copy: "Le choix vous appartient : la puissance enivrante du Système Direct Response Hybrid d'Infiniti, associant un moteur essence V6 de 3,5 litres à la puissance d'un moteur électrique performant – ou le moteur diesel réactif 2,2 litres turbocompressé 4 cylindres, développant 170 ch pour moins de 115 g/km d'émissions de CO2. Une chose est sûre, quel que soit votre choix, vous n'aurez aucun compromis à faire entre performance et efficacité. [1]"
+    hybrid:
+      header: "Un modèle hybride performant"
+      copy: "Un modèle hybride performant – Fusion sublime de la puissance et de l'efficacité, la chaîne cinématique délivre une accélération foudroyante ainsi qu'une puissance saisissante. Les véhicules de luxe classiques utilisent de plus gros moteurs afin d'accroître les performances. Le Q50 hybride dispose d'une batterie en lithium-ion afin de délivrer une puissance supplémentaire lors de l'accélération. Cette puissance est transmise par le double embrayage intelligent qui délivre les performances « plein couple » sans sacrifier l'efficacité énergétique. Le système se recharge partiellement à chaque freinage, pour encore plus d'éfficacité."
+      video: "hybride"
+    steering:
+      header: "Direct Adaptive Steering"
+      copy: "Système de direction Direct Adaptive Steering - Contrôle. Précision. Adaptabilité. Triple couronne de la manœuvrabilité. Après plus de 10 ans de recherche et de développement, cette innovation est désormais à votre disposition. Cette technologie, une première au monde, repose sur un système électronique qui permet un contrôle parfait de la direction, pour une conduite encore plus précise. Sur les routes au revêtement de mauvaise qualité, cette technologie fait automatiquement les réglages subtiles afin d'offrir une sensation de stabilité tout en vous protégeant des vibrations excessives de la route."
+      video: "direction"
+    drivemodes:
+      header: "Modes de conduite personnalisés"
+      copy: "Modes de conduite personnalisés – Avec le système de direction innovant Direct Adaptive Steering d’Infiniti, le conducteur peut choisir entre 3 modes pour personnaliser sa conduite. Choisissez les modes Sport ou Standard selon la route ou tout simplement votre humeur. Avec le mode Personnalisé,  la direction et le degré de réponse de la direction peuvent être personnalisés, vous permettant de contrôler la route comme vous le souhaitez. [2]"
+      video: "conduite"
+  #TECHNOLOGY PAGE
+  technology:
+    page_title: "Technologie du tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : découvrez la technologie intuitive du tout nouvel Infiniti Q50, qui propose des équipements numériques, audio et de sécurité avancés."
+    page_canonical: "/be-fra/technology/index.html"
+    intro:
+      header: "TECHNOLOGIE INTUITIVE"
+      copy: "Gardez le contact en permanence"
+    environment:
+      header: "Environnement numérique"
+      copy: "Environnement numérique personnalisable – Le système maîtrise bien plus que votre réglage de siège préféré. Bien plus que les paramètres de climatisation optimaux. Bien plus que votre itinéraire panoramique préféré pour rentrer chez vous ou le mode de conduite que vous sélectionnez habituellement. Le système vous connaît. Et dès qu'il détecte votre clé intelligente Infiniti, il s'assure que vous trouviez votre Q50 dans la configuration que vous recherchez. De la magie ? Non, une technologie sophistiquée dont les pouvoirs peuvent vous surprendre. [1]"
+    intouch:
+      header: "Infiniti InTouch&#8482;"
+      copy: "Infiniti InTouch&#8482; – Votre vie a besoin d'une connexion. Avec Infiniti InTouch&#8482;, vous ne perdez jamais le rythme. Grâce à ce système à double écran révolutionnaire, vous pouvez très facilement vous connecter, contrôler et personnaliser votre expérience numérique sans perdre un seul moment intéressant. Vous pouvez accéder aux e-mails, à la navigation, à la synchronisation de votre smartphone, aux applications Infiniti InTouch, et plus encore, par commande vocale ou tactile. Voici la manière la plus complète en matière de connexion pour vous déplacer et être au fait des dernières nouvelles. À chaque déplacement, vous disposez d'un niveau de connexion inégalé. [2]"
+    connection:
+      header: "Rester connecté"
+      copy: ""
+    audio:
+      header: "Système audio BOSE<sup>&reg;</sup>"
+      copy: "Système audio BOSE<sup>&reg;</sup> nouvelle génération – Les ingénieurs du son BOSE<sup>&reg;</sup> ont mis au point une qualité audio personnalisée pour le tout nouvel Infiniti Q50.  Ce système de 14 haut-parleurs se distingue par trois haut-parleurs ronds de 25 cm pour une pression acoustique améliorée et des fréquences graves plus nettes.  Les autres haut-parleurs sont alignés afin de vous offrir un son optimisé pour l'acoustique de l'habitacle, filtrant bruit et distorsion pour une expérience comparable à celle d'une salle de concert, que seul Infiniti peut offrir."
+    collision:
+      header: "Dispositif de prévention des collisions en marche arrière (BCI - Back-up Collision Intervention)"
+      copy: "Sécurisez vos manœuvres en marche arrière – Le dispositif de prévention des collisions en marche arrière d'Infiniti (BCI, Back-up Collision Intervention) constitue une avancée majeure en matière de sécurité au volant. Lorsque vous êtes en marche arrière, ce dispositif permet de détecter les véhicules traversant votre trajectoire ainsi que les objets derrière le véhicule, et avertit le conducteur par un signal visuel et sonore. Si nécessaire, le dispositif BCI peut activer automatiquement les freins pour éviter une collision. [3]"
+    safetyshield:
+      header: "Bouclier de sécurité"
+      copy: "Le bouclier de sécurité Infiniti témoigne de notre approche globale en matière de sécurité. Le Q50 offre un ensemble de technologies qui procurent sécurité et confort en contrôlant les conditions, en vous avertissant de tout risque potentiel, en vous aidant à éviter les collisions et en vous protégeant, vous et vos passagers, en cas de choc."
+      risk_n_appeared:
+        label: "Avant l’apparition du risque >"
+        link: "/be-fra/technology/safety-shield/risk-has-not-yet-appeared.html"
+      risk_appeared:
+        label: "Après l’apparition du risque >"
+        link: "/be-fra/technology/safety-shield/risk-has-appeared.html"
+      collision_m_occur:
+        label: "Risque de collision >"
+        link: "/be-fra/technology/safety-shield/collision-may-occur.html"
+      collision_unavoidable: 
+        label: La collision ne peut pas être évitée >"
+        link: "/be-fra/technology/safety-shield/collision-unavoidable.html"
+      collision:
+        label: "Collision >"      
+        link: "/be-fra/technology/safety-shield/collision.html"
+    monitor:
+      header: "Vue panoramique 360&deg; (AVM - Around View<sup>&reg;</sup> Monitor)"
+      copy: "Vue panoramique 360&deg; (AWD - Around View<sup>&reg;</sup> Monitor) - Infiniti a propose le premier système de vue panoramique 360&deg; au monde (AVM - Around View<sup>&reg;</sup> Monitor). Cette technologie avancée et intuitive simplifie les manœuvres de stationnement. Les quatre caméras placées tout autour du véhicule vous permettent d’obtenir une vue à 360&deg; qui apparaît sur votre écran. Infiniti a perfectionné son système en y ajoutant le dispositif de détection des objets en mouvement (MOD - Moving Object Detection), qui avertit le conducteur de la présence d’objets en mouvement. En vous offrant une vue panoramique optimale sur le monde qui vous entoure, le Q50 vous permet de circuler même dans les espaces les plus restreints. [4]"
+  #SAFETY SHIELD PAGES
+  safety_shield:
+    intro:
+      header: "Bouclier de sécurité"
+      back:
+        label: "< Retour au bouclier de sécurité"
+        link: "/be-fra/technology/index.html"
+    risk_n_appeared:
+      header: "Avant l’apparition du risque"
+      tagline: "Offre une conduite confortable."
+      int_cc:
+        header: "Régulateur de vitesse intelligent (ICC - Intelligent Cruise Control) (à toutes les vitesses) [1]"
+        copy: "Régule automatiquement la vitesse en fonction de la circulation."
+      dist_control:
+        header: "Assistance au maintien des distances de sécurité (DCA - Distance Control Assist) [2]"
+        copy: "Cette technologie révolutionnaire incite le conducteur à relâcher la pédale d'accélérateur et à freiner dans des conditions de circulation impliquant un freinage fréquent."
+      around_view:
+        header: "Vue panoramique 360&deg; (MOD - Moving Object Detection) avec détection des objets en mouvement [3]"
+        copy: "Le premier système de vue panoramique 360&deg; au monde doté d’un dispositif de détection des objets en mouvement vous offre une vue à 36&deg; lors des manœuvres de stationnement, et vous avertit par des signaux sonores et visuels à l’écran lorsque des objets en mouvement sont détectés."
+    risk:
+      header: "Après l’apparition du risque"
+      tagline: "Permet au conducteur de retrouver des conditions de sécurité optimales."
+      back_collision:
+        header: "Dispositif de prévention des collisions en marche arrière (BCI - Back-up Collision Intervention) [1]"
+        copy: "Les capteurs de type radar et sonar installés sur le côté et à l’arrière du véhicule avertissent le conducteur en cas de risque de collision avec des objets traversant la trajectoire pendant la marche arrière. Si le conducteur ne s’arrête pas alors qu’un danger a été identifié, les freins sont automatiquement activés."
+      blind_spot:
+        header: "Systèmes de surveillance de l'angle mort (BSW - Blind Spot Warning) et d'intervention (BSI, Blind Spot Intervention) [2]"
+        copy: "La première technologie au monde qui avertit le conducteur de la présence d'un autre véhicule dans la zone d'angle mort lors d'un changement de voie. Cette technologie aide également le conducteur à regagner le centre de la voie."
+      lane_depart:
+        header: "Systèmes de prévention des écarts (LDW - Lane Departure Warning) et de suivi de voie (LDP - Lane Departure Prevention) [3]"
+        copy: "Autre avancée technologique, le système de suivi de voie (LDP, Lane Departure Prevention) détecte les déviations de trajectoire involontaires et assiste automatiquement le conducteur pour le retour au centre de la voie."
+      predict_collision:
+        header: "Système d'avertissement anticollision frontale (FCW - Forward Collision Warning) [4]"
+        copy: "Premier système au monde à avertir le conducteur des risques qui se présentent au-delà de son champ de vision. Il peut non seulement détecter la distance et la vitesse relative du véhicule suivant, mais également celles du véhicule d'après."
+    may_occur:
+      header: "Risque de collision"
+      tagline: "Permet au conducteur de retrouver des conditions de sécurité optimales."
+      forward_brake:
+        header: "Système de freinage d'urgence avant [1]"
+        copy: "<p>Lorsque le système estime qu’une décélération est nécessaire, il avertit le conducteur en affichant une image à l’écran et en émettant un signal sonore, puis génère une force qui fait remonter la pédale d’accélérateur et applique en douceur un freinage partiel afin d’aider le conducteur à ralentir le véhicule.</p><p>Lorsque le système estime qu’il existe un risque de collision, il applique automatiquement un freinage plus puissant de manière à éviter cette collision.</p>"
+    unavoidable:
+      header: "La collision ne peut pas être évitée "
+      tagline: "Réduit les risques de blessures lorsque la collision ne peut pas être évitée."
+      forward_brake:
+        header: "Système de freinage d'urgence avant [1]"
+        copy: "Lorsque les conditions sont telles que la collision ne peut pas être évitée, le système avertit le conducteur, active automatiquement les freins et resserre la ceinture de sécurité afin de réduire la vitesse et de limiter les dégâts."
+    collision:
+      header: "Collision"
+      tagline: "Réduit les risques de blessures une fois la collision survenue."
+      body_structure:
+        header: "Airbags et Rigidité de la carrosserie [1]"
+        copy: "Système d’airbag avancé d’Infiniti ; airbags latéraux de type « rideau » sièges avant ; airbags supplémentaires pour les deux rangées de sièges ; ceintures de sécurité avant avec système de prétension, limiteurs de charge et témoins de bouclage de ceinture. Construction de la carrosserie avec zones de déformation à l’avant et à l’arrière."
+    back:
+      label: "< Retour"
+      link: "/be-fra/technology/index.html"
+    safety-shield:
+      label: "Retour au bouclier de sécurité"
+      link: "/be-fra/technology/index.html"
+    forward:
+      label: "Suivant >"
+      link: "/be-fra/technology/index.html"
+  #ALL FEATURES PAGE
+  features:
+    page_title: "Ensemble des équipements du tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : découvrez l’ensemble des équipements du tout nouvel Infiniti Q50, une interprétation unique du luxe et de l’élégance avec des améliorations en matière de puissance et d’efficacité, ainsi que des équipements numériques, audio et de sécurité avancés."
+    page_canonical: "/be-fra/features/index.html"
+    header: "Ensemble des équipements du tout nouvel Infiniti Q50"
+  #HANDRAISER MODAL
+  updates:
+    page_title: "Obtenir des mises à jour sur le tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Infiniti USA Official Site: Join the All-New Infiniti Q50 mailing list and try Infiniti Personal Assistant free for 90 days."
+    page_canonical: "/be-fra/updates/index.html"
+    header: "Join the All-New 2014 Infiniti Q50 mailing list"
+  handraiser:
+    request: "Be One Of The First To Know"
+    tagline: "Join the All-New Infiniti Q50 mailing list and enjoy a complimentary, 90-day trial of Infiniti Personal Assistant.<sup>[1]</sup>"
+    info: "Join the Infiniti Q50 mailing list for preferred access to the latest on this breakthrough sedan. Then experience the refined service of Infiniti Personal Assistant free for 90 days. To take advantage of this unprecedented opportunity, simply register for Infiniti G updates by filling in the fields below."
+    details: 
+      label: "View Details"
+      link: "/be-fra/join/"
+    required: "Required*"
+    field_firstname: "First Name"
+    field_lastname: "Last Name"
+    field_email: "Email"
+    field_zipcode: "ZIP Code"
+    field_submit: "JOIN MAILING LIST"
+    link_privacy: "Privacy Policy"
+    privacy: "Note: Your personal information is used for Infiniti communications purposes only. Providing your e-mail address allows Infiniti and its Retailers to contact you with marketing information about our products and services. This permission supersedes any national Do Not Call lists."
+    disclaimer:
+      text1: "[1] Click the link for Terms and to register: "
+      link1: "http://www.infinitipersonalassistant.com/Q50-event"
+      text2: ", if you do not receive an email confirmation. Available for US customers only and while supplies last.<br />Terms and Conditions apply. Infiniti Personal Assistant is complimentary the first 48 months; paid subscription required thereafter. Infiniti Personal Assistant communicates through a cellular network. Connection and signal strength may vary and be limited by location. Always give your full attention to driving. Avoid operating IPA in such a way that you can be distracted during vehicle operation. For additional information, please visit "
+      link2: "http://www.infinitipersonalassistant.com/tc"
+      not_share_information: "We do not share your information with any other company."
+    thankyou: "Thank You"
+    thankyou_copy: "Thank you for your interest in the All-New Infiniti Q50. As more details are revealed about the Infiniti Q50, we'll keep you updated. We appreciate your interest and look forward to sharing more about this vehicle in the future."
+    next_step_title: "Suggested Next Steps"
+    next_step_link: "Visit InfinitiUSA.com"
+    stay_connected_title: "Stay Connected"
+    view_details:
+      copy1: "Join the Infiniti Q50 mailing list for preferred access to the latest on this breakthrough sports sedan. Then experience the refined service of Infiniti Personal Assistant for 90 days, with our compliments. You’ll enjoy live, 24-hour access to a team of professional personal assistants, ready to help with:"
+      bullet1: "Directory assistance"
+      bullet2: "Traffic conditions"
+      bullet3: "Sports scores and stats"
+      bullet4: "Dining recommendations/reservations"
+      bullet5: "Movie times/reviews"
+      bullet6: "Additional services"
+      copy2: "To take advantage of this unprecedented opportunity, simply register for Infiniti Q50 updates by filling in the fields below. Once your registration has been processed, you will receive a link and further instructions on how to activate your 90-day trial."
+  #GALLERY PAGE
+  gallery:
+    page_title: "Photos et vues panoramiques à 360° du tout nouvel Infiniti Q50 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : consultez des photos exclusives et des vues panoramiques à 360° du tout nouvel Infiniti Q50."
+    page_canonical: "/be-fra/gallery/index.html"
+    page_interior_canonical: "/be-fra/gallery/interior.html"
+    page_threesixty_canonical: "/be-fra/gallery/360s.html"
+    threesixty:
+      header: "Extérieur à 360&deg;"
+      copy: "&lt;&nbsp;Glissez votre doigt sur l’écran pour faire pivoter&nbsp;&gt;"
+    panorama:
+      header: "Vue panoramique à 360&deg;"
+      copy: "Appuyez pour démarrer"
+  #DISCLAIMERS
+  disclaimers:
+    microsite: "Toutes les illustrations, photographies et caractéristiques présentées dans cette publication sont basées sur le véhicule concept, même si elles reflètent les dernières informations produit disponibles au moment de l'impression. Étant donné qu'il s'agit d'un véhicule prototype et que les équipements, la conception et les accessoires finaux n'ont pas encore été déterminés, les véhicules sortant de production peuvent être différents de ceux présentés. Découvrez un véhicule de production dans votre Centre Infiniti avant l'achat. La disponibilité et les dates de livraison peuvent varier selon les modèles ou les équipements."
+    design:
+      luxury_seating: "Uniquement pour les sièges avant."
+    performance:
+      personalized_drive_modes: "À des fins de mise en scène uniquement. Cette démo ne correspond pas à un angle de braquage réel. La disponibilité du mode dépend du choix concernant le moteur et la transmission."
+      engines: "Chiffres des émissions de CO2 soumis à homologation finale. Les chiffres officiels concernant la consommation de carburant et les émissions de CO2 ne sont pas encore disponibles et peuvent varier en fonction du moteur, de la transmission et de la taille des pneus."
+    technology:
+      digital_environment: "Simulation d'images d'écran.  Illustrations avec des designs d'écran et une interface numérique de pré-production. Ces illustrations peuvent ne pas correspondre exactement à la réalité du véhicule de production."
+      intouch: "Conduire veut aussi dire mettre l'accent sur la sécurité. N'utilisez les services d'applications Infiniti InTouch&#8482; que lorsque le niveau de sécurité approprié le permet. Contrat d'abonnement requis pour accéder aux services. Smartphone compatible requis ; la couverture du réseau peut être limitée dans certaines régions.   Les cartes GPS ne fournissent pas systématiquement des détails sur toutes les régions ou peuvent ne pas prendre en compte les dernières dispositions en matière de code de la route. Un certain nombre d'applications et de services, dont Google Points of Interest et Send to Car, sont fournis par des sociétés indépendantes sur lesquelles Infiniti ne dispose d'aucun contrôle. Dans le cas où le fournisseur du service ou de l'application met fin au / limite le service en question, le service peut être arrêté momentanément ou définitivement sans aucune notification préalable adressée à Infiniti ou à ses agents et sans engager la responsabilité d'Infiniti ou de ses agents. Infiniti n'est pas responsable en cas de remplacements ou de mises à niveau d'applications ou d'équipements, ni des coûts associés, nécessaires pour assurer la continuité du fonctionnement suite à des modifications apportées aux services ou aux applications.  La disponibilité des services d'applications InTouch&#8482; dépend du pays. Contrat d'abonnement soumis à des conditions.  Les tarifs standard en matière de texte et/ou d'utilisation de données peuvent s'appliquer aux communications reçues par e-mail ou SMS / message texte."
+      connection: "Driving is serious business. Only use Infiniti Connection<sup>&trade;</sup> and Infiniti Connection Plus services when safe to do so. Subscription Agreement required to enroll. Initial 12 months, beginning on your date of purchase, included complimentary. Subsequently, your credit card (if on file) will be charged at the then current subscription rate and your service will continue for 1 year periods under the terms of your Subscription Agreement, unless cancelled. Services require compatible 2G GSM/GPRS cellular network. Cellular network and vehicle services, including Google Calendar<sup>&trade;</sup>, provided by independent companies not within Infiniti’s control. Cellular network not available in all areas. 2G cellular network not available in all areas. In areas with 2G network coverage, signal strength may vary and/or not be available at all times. Cellular technology is evolving, and changes to cellular networks may affect future service functionality. Ask your cellular network carrier for details on anticipated 2G network availability in your area and how this may affect your planned usage. Should a cellular provider or service provider terminate/further restrict service, service may be suspended or terminated without notice or liability to Infiniti and its affiliates and agents. Infiniti not responsible for any equipment replacement or upgrades, or associated costs, that may be required for continued operation due to service changes.Terms and conditions of Subscription Agreement apply. Standard text rates and/or data usage may apply to communications received by email or SMS/text message."
+      backup_collision: "Le dispositif BCI ne détecte pas tous les objets et n'est fonctionnel que dans une plage de vitesses définies. Contrôlez systématiquement les alentours du véhicule avant de le déplacer. Ce dispositif ne remplace pas les procédures de marche arrière appropriées. Retournez-vous systématiquement pour vérifier ce qui se trouve derrière vous avant d'entamer votre marche arrière. Consultez le manuel du propriétaire pour plus de détails. *Disponible uniquement avec les boîtes automatiques."
+      monitor: "Le système AVM avec détection des objets en mouvement ne peut pas supprimer complètement les angles morts ni détecter tous les objets. Le dispositif de détection des objets en mouvement n’est fonctionnel que lorsque la vitesse du véhicule est inférieure à 8 km/h. Contrôlez systématiquement les alentours du véhicule avant de le déplacer. Ce dispositif ne remplace pas les procédures de marche arrière appropriées. Retournez-vous systématiquement pour vérifier ce qui se trouve derrière vous avant d'entamer votre marche arrière. La détection des objets en mouvement fonctionne lorsque la vitesse du véhicule est inférieure à 8 km/h."
+      lane_depart: "Le système de prévention des écarts (LDW, Lane Departure Warning) n’est fonctionnel que lorsque les marquages de voie sont clairement visibles sur la chaussée. Il ne fonctionne que dans une plage de vitesses définies. Reportez-vous au manuel du propriétaire pour plus de détails."
+      lane_depart2: "Le système de prévention des écarts (LDW - Lane Departure Warning) n’est fonctionnel que lorsque les marquages de voie sont clairement visibles sur la chaussée. Il ne fonctionne que dans une plage de vitesses définies. Reportez-vous au manuel du propriétaire pour plus de détails."
+      blind_spot: "Les systèmes de surveillance de l'angle mort (BSW, Blind Spot Warning) et d’intervention (BSI, Blind Spot Intervention®) ne remplacent pas les procédures de changement de voie appropriées. Ils ne permettent pas d’éviter les chocs avec d’autres véhicules ou les accidents. Ils ne détectent pas tous les véhicules ou objets qui vous entourent."
+      predict_collision: "Le système d'avertissement anticollision frontale (FCW, Forward Collision Warning) est conçu pour vous avertir avant une collision ; il ne peut en aucun cas éviter les collisions. Il ne fonctionne que dans une plage de vitesses définies. Conduisez toujours avec vigilance."
+      forward_braking: "Le système de freinage d’urgence n’empêche pas les accidents dus au manque d’attention ou à une conduite dangereuse. Dans certaines conditions, il ne vous avertit pas et n’active pas les freins. Il ne fonctionne que dans une plage de vitesses définies. Conduisez toujours avec vigilance."
+      air_bags: "Les airbags ne doivent être considérés que comme un système de retenue supplémentaire ; bouclez systématiquement votre ceinture. Même lorsque le capteur de classification des occupants est installé, les systèmes de retenue pour enfants orientés vers l’arrière ne doivent pas être installés sur le siège passager avant. En outre, jusqu'à l’âge de 12 ans, les enfants doivent voyager sur le siège arrière et, en fonction de leur taille, être correctement attachés dans des systèmes de retenue appropriés, des sièges d'appoint ou à l'aide de ceintures de sécurité. Les airbags ne se déclenchent que dans certains types d’accidents ; consultez le manuel du propriétaire pour plus de détails."
+      seat_belt: "Bouclez systématiquement votre ceinture de sécurité, et ne prenez pas le volant après avoir bu de l'alcool. ©2013 Business Unit INFINITI de Nissan North America, Inc"
+      distance_control: "Dans certaines conditions, l’assistance au maintien des distances de sécurité permet de maintenir la distance avec le véhicule qui précède. Ce système ne permet pas d'éviter les collisions. Il ne dispense en aucun cas le conducteur d'appuyer sur la pédale de frein."
+      cruise: "Le régulateur de vitesse intelligent (à toutes les vitesses) ne permet pas d’éviter les collisions et ne constitue pas un système d’avertissement. Il est conçu pour appliquer un freinage limité. Il ne dispense en aucun cas le conducteur d'appuyer sur la pédale de frein."
+  #404
+  four-zero-four:
+    page_title: "Le tout nouvel Infiniti Q50 404 | Infiniti Belgium"
+    page_description: "Site officiel Infiniti Belgium : présentation du tout nouvel Infiniti Q50. Découvrez le design, les performances et la technologie de ce nouveau modèle révolutionnaire."
+    page_canonical: "/be-fra/404.html"
+    intro:
+      header: "Veuillez nous excuser"
+      copy: "La page que vous recherchez est introuvable. Pour reprendre votre visite, cliquez sur le bouton ci-dessous, ou sélectionnez un des liens suivants."
+      button: "Consultez le microsite Q50"
+    

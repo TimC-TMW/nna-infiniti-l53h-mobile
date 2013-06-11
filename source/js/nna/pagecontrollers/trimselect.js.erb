@@ -1,0 +1,26 @@
+(function(NNA, $) {
+
+  NNA.PageControllers.TrimSelect = NNA.PageControllers.Models.extend({
+    init : function(options) {
+      this._super(options);
+      this.collapsed = true;
+      this.priceLinkHandler();
+      this.initExpand();
+
+      // CRM Event, page load
+      $.publish('/nna/request-quote/trim/load', ['Conventional']);
+    },
+    priceLinkHandler: function() {
+      $('.collapsed').click(function() {
+        var link = '<%= link_to "", I18n.t("nav.quote.link") %>';
+        window.location = $(link).attr('href') + "?t=" + $(this.parentElement).data('id') + "&desc=" + encodeURIComponent($(this.parentElement).data('title')) + "&drive=" + encodeURIComponent($(this.parentElement).data('drive-type'));
+      });
+    },
+    initExpand: function() {
+      $('#collapseBtn button').click(function() {
+        // CRM Event, trim expand
+        $.publish('/nna/request-quote/trim/expand');
+      });
+    }
+  });
+})(NNA, jQuery); 

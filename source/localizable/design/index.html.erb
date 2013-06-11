@@ -1,0 +1,144 @@
+---
+crmpageid: 30946
+---
+<% @current_nav = 1 %>
+
+<% content_for :pageid do %>page_design<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("design.page_title") %></title>
+<meta name="description" content="<%= I18n.t("design.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("design.page_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("design.page_canonical") %>" addthis:description="<%= I18n.t("design.page_description") %>" addthis:title="<%= I18n.t("design.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+
+<script language="JavaScript" type="text/javascript">
+var s_account = "tdi-infinitiglobal,<%= I18n.t("booth") %>"
+</script>
+<script language="JavaScript" type="text/javascript" src="<%= asset_path :js, "s_code.js?v=1.0" %>"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+s.pageName="Mobile_Q50_design"
+s.server=""
+s.channel="microsite"
+s.pageType=""
+s.prop1=""
+s.prop2="<%= I18n.t("country") %>"
+s.prop3="<%= I18n.t("language") %>"
+s.prop4="<%= I18n.t("country") %>-<%= I18n.t("language") %>;q=0.5"
+s.prop5=""
+s.prop7="Q50"
+s.prop10="Mobile_Q50_design"
+s.prop15=""
+s.prop16="Mobile_Q50_design"
+
+/* Conversion Variables */
+s.campaign=""
+s.state=""
+s.zip=""
+s.events=""
+s.products=""
+s.purchaseID=""
+s.eVar1=""
+s.eVar2=""
+s.eVar3="Q50"
+s.eVar4=""
+s.eVar5=""
+s.eVar6=""
+s.eVar15=""
+s.linkTrackVars = ""
+s.linkTrackEvents = ""
+s.visitorNamespace = "nissanglobal"
+s.trackingServer = "<%= I18n.t("metric") %>"
+
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="http://<%= I18n.t("metric") %>/b/ss/tdi-infinitiglobal,<%= I18n.t("booth") %>/1/H.24.3--NS/0?[AQB]&cdp=3&[AQE]"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.24.3. -->
+
+<!-- page content -->
+<section id="design" class="wf">
+	<article id="intro">
+		<h1><%= I18n.t("design.intro.header") %></h1>
+		<p> <%= I18n.t("design.intro.copy") %> </p>
+	</article>
+	<article id="design-overview">
+		<h2><%= I18n.t("design.overview.header") %></h2>
+		<video controls="controls" poster="<%= asset_path :images, "design/design-overview.jpg" %>" width="300" height="169">
+			<source src="<%= asset_path :images, "design/video/overview.mp4" %>" type="video/mp4" />
+			<source src="<%= asset_path :images, "design/video/overview.webm" %>" type="video/webm" />
+			<source src="<%= asset_path :images, "design/video/overview.ogv" %>" type="video/ogg" />
+		</video>
+		<p> <%= I18n.t("design.overview.copy") %> </p>
+	</article>
+	<article id="exterior-360">
+		<h2><%= I18n.t("design.exterior.header") %></h2>
+		<div id="exterior-360-container">
+			<div class="threesixty">
+				<div class="hint wf">
+					<h2><%= I18n.t("gallery.threesixty.header") %></h2>
+					<p><%= I18n.t("gallery.threesixty.copy") %></p>
+				</div>
+			</div>
+		</div>
+		<p> <%= I18n.t("design.exterior.copy") %> </p>
+	</article>
+	<article id="adaptive-headlamps">
+		<h2><%= I18n.t("design.headlights.header") %></h2>
+		<video controls="controls" poster="<%= asset_path :images, "design/adaptive-headlamps.jpg" %>" width="300" height="169">
+			<source src="<%= asset_path :images, "design/video/headlights.mp4" %>" type="video/mp4" />
+			<source src="<%= asset_path :images, "design/video/headlights.webm" %>" type="video/webm" />
+			<source src="<%= asset_path :images, "design/video/headlights.ogv" %>" type="video/ogg" />
+		</video>
+		<p> <%= I18n.t("design.headlights.copy") %> </p>
+	</article>
+	<article id="luxury-seating">
+		<h2><%= I18n.t("design.seating.header") %></h2>
+		<%= image_tag "design/luxury-seating.jpg", :width=>300 %>
+		<p> <%= I18n.t("design.seating.copy") %> </p>
+	</article>
+	<article id="intuitive-interior">
+		<h2><%= I18n.t("design.interior.header") %></h2>
+		<video controls="controls" poster="<%= asset_path :images, "design/intuitive-interior.jpg" %>" width="300" height="169">
+			<source src="<%= asset_path :images, "design/video/interior.mp4" %>" type="video/mp4" />
+			<source src="<%= asset_path :images, "design/video/interior.webm" %>" type="video/webm" />
+			<source src="<%= asset_path :images, "design/video/interior.ogv" %>" type="video/ogg" />
+		</video>
+		<p> <%= I18n.t("design.interior.copy") %> </p>
+	</article>
+	<article id="interior-panorama">
+		<h2><%= I18n.t("design.pano.header") %></h2>
+		<a href="#" id="launch-pano" data-pano-xml="gallery/krpano/tour.xml"> <%= image_tag "design/interior-panorama.jpg", :width=>300 %></a>
+		<p> <%= I18n.t("design.pano.copy") %> </p>
+	</article>
+	<%= partial "partials/sub_nav" %>
+</section>
+
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+<li>[1] <%= I18n.t("disclaimers.design.luxury_seating") %></li>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageControllers.Design();
+		jQuery.publish('/nna/crm/pageload');
+	}); 
+</script>
+<% end %>

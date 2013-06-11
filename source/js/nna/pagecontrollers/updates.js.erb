@@ -1,0 +1,39 @@
+(function(NNA, $) {
+
+	NNA.PageControllers.Updates = NNA.PageController.extend({
+		init : function(options) {
+			this._super(options);
+
+			this.handraiser = new NNA.Handraiser();
+			this.initOffer();
+
+			debug.info('NNA.PageControllers.Updates: initialized');
+		},
+
+		initOffer : function() {
+			$('#updates_form .view-details').toggle(function(e) {
+				e.preventDefault();
+				$('.view-more-details').slideDown();
+
+				// toggle open/close symbol
+			    if($('.view-details span').text() == '+'){
+			        $('.view-details span').text('-');   
+			    } else {
+			        $('.view-details span').text('+');
+			    }
+
+			}, function(e) {
+				e.preventDefault();
+				$('.view-more-details').slideUp();
+
+				// toggle open/close symbol
+			    if($('.view-details span').text() == '+'){
+			        $('.view-details span').text('-');   
+			    } else {
+			        $('.view-details span').text('+');
+			    }
+
+			});
+		}
+	});
+})(NNA, jQuery); 

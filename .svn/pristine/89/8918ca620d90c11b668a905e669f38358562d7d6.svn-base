@@ -1,0 +1,5 @@
+<!-- header -->
+<header class="main wf">
+  <%= link_to I18n.t("header.logo"), I18n.t("header.link"), :class=>"logo ir", :query=>"next=Q50_Micro.Logo.Home_Page.Home" %>
+	<%= link_to I18n.t("header.signup"), I18n.t("header.signup_link"), :class=>"sign_up wf", :target=>"_blank"  %>
+</header>

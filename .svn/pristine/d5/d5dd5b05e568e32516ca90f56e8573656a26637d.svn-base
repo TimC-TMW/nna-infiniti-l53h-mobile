@@ -1,0 +1,16 @@
+(function(NNA, $) {
+
+	NNA.PageControllers.ThreeSixty = NNA.PageController.extend({
+		init : function(options) {
+			this._super(options);
+			
+			this.threeSixtyWrapper = $('#exterior-360');
+			this.threeSixtyElement = this.threeSixtyWrapper.find('.threesixty');
+		
+			this.showExterior();
+			//this.attachGalleryEvents();
+
+			debug.info('NNA.PageControllers.ThreeSixty: initialized');
+		}		
+	});
+})(NNA, jQuery); 

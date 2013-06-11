@@ -1,0 +1,7 @@
+<nav id="item_nav">
+  <button class="item_nav_<%= link1[:class] %>"><%= link_to "<span>#{link1[:text]}</span>",link1[:link] %></button>
+  <% if defined? link2 and link2 %>
+  <button class="item_nav_<%= link2[:class] %>"><%= link_to "<span>#{link2[:text]}</span>",link2[:link] %></button>
+  <% end %>
+</nav>
+<div class="clearfix"></div>

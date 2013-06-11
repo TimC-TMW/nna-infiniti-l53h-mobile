@@ -1,0 +1,59 @@
+---
+crmpageid: 31021
+parent_item: models
+---
+
+<% 
+@current_nav = 11 
+@disclaimer_index = 1
+@disclaimers = Array.new
+@model = model
+@trim = getSpecTrim(@model)
+%>
+
+<% content_for :pageid do %>page_specs<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("specs.page_title") %></title>
+<meta name="description" content="<%= I18n.t("specs.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("models.page_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("specs.page_canonical") %>" addthis:description="<%= I18n.t("specs.page_description") %>" addthis:title="<%= I18n.t("specs.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<!-- page content -->
+<section id="specs">
+  <article id="intro" class="visuallyhidden">
+    <h1><%= I18n.t("specs.header") %></h1>
+  </article>
+  <%= partial("partials/item_nav", :locals => { 
+    :link1 => {:class => "active chevron", :link => I18n.t("specs.item_nav1.link"), :text => I18n.t("specs.item_nav1.text")},
+    :link2 => {:class => "inactive", :link => I18n.t("specs.item_nav2.link"), :text => I18n.t("specs.item_nav2.text")}
+  }) %>
+  <article id="lists">
+    <%= partial "partials/specs_specifications", :locals => {:trim_code => @model} %>
+    <%= partial "partials/specs_packages", :locals => {:trim => @trim} %>
+  </article>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+  <% @disclaimers.each_with_index do |disclaimer,key| %>
+    <li><%= buildDisclaimer(disclaimer, key) %></li>
+  <% end %>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+  // init page
+  NNA.pageInit(function() {
+    new NNA.PageControllers.Specs();
+  }); 
+</script>
+<% end %>

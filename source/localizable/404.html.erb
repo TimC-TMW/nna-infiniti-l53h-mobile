@@ -1,0 +1,71 @@
+---
+layout: home
+---
+<% @current_nav = 100 %>
+
+<% content_for :pageid do %>page-four-zero-four<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("four-zero-four.page_title") %></title>
+<meta name="description" content="<%= I18n.t("four-zero-four.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("four-zero-four.page_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("four-zero-four.page_canonical") %>" addthis:description="<%= I18n.t("four-zero-four.page_description") %>" addthis:title="<%= I18n.t("four-zero-four.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<!-- page content -->
+<section id="container" class="wf">
+	<article id="copy" class="clearfix">
+		<h2><%= I18n.t("four-zero-four.intro.header") %></h2>
+		<p>
+			<%= I18n.t("four-zero-four.intro.copy") %>
+		</p>
+		<div class="button-container">
+			<%= link_to I18n.t("four-zero-four.intro.button"), I18n.t("header.link"), :class=>"visit-microsite" %>
+		</div>
+		<h3>
+			<% link_to I18n.t("nav.design.link") do %>
+            <%= I18n.t("subnav.design.label") %> <span><%= I18n.t("subnav.design.label2") %></span>
+            <% end %>
+       	</h3>
+		<h3>
+			<% link_to I18n.t("nav.performance.link") do %>
+            <%= I18n.t("subnav.performance.label") %> <span><%= I18n.t("subnav.performance.label2") %></span>
+            <% end %>
+		</h3>
+		<h3>
+			<% link_to I18n.t("nav.technology.link") do %>
+            <%= I18n.t("subnav.technology.label") %> <span><%= I18n.t("subnav.technology.label2") %></span>
+            <% end %>
+		</h3>
+		<p class="line">
+			<img src="/media/404/horizontal-line.png" />
+		</p>	
+		<h3 class="all-features">
+			<%= link_to I18n.t("subnav.features.label"), I18n.t("nav.features.link") %>
+		</h3>
+		<h3>
+			<%= link_to I18n.t("subnav.gallery.label"), I18n.t("nav.gallery.link") %>
+		</h3>
+	</article>
+	<%= partial "partials/sub_nav" %>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageController();
+	}); 
+</script>
+<% end %>

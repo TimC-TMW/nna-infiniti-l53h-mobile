@@ -1,0 +1,34 @@
+<% packages = getPackagesByTrim(trim.package_groups) %>
+<ul class="packages" data-category="<%= I18n.t("specs.item_nav2.text") %>">
+  <%# output all packages %>
+  <% packages.each do |key, package| %>
+    <li class="list">
+      <header>
+        <h3><%= package.title %> <%= I18n.t("specs.package") %></h3>
+      </header>
+      <article>
+        <div class="price">
+          <p class="msrp"><%= I18n.t("specs.common.starting_at_pre") %></p>
+          <p class="value"><%= moneyFormat(package.price, @cfg.currency) %>*</p>
+        </div>
+        <ul class="sublist">
+          <% package.features.each do |feature| %>
+            <% if feature.disclaimer and feature.disclaimer != nil %>
+              <li><%= feature.title %> [<%= @disclaimer_index %>]</li>
+              <%
+                curr_disclaimer = @cfg.disclaimers["#{feature.disclaimer}"]
+                @disclaimers.push(curr_disclaimer) 
+                @disclaimer_index += 1 
+              %>
+            <% else %>
+              <li><%= feature.title %></li>
+            <% end %>
+          <% end %>
+        </ul>
+        <% if package.required %>
+          <p class="required"><%= package.required %></p>
+        <% end %>
+      </article>
+    </li>
+  <% end %>
+</ul>

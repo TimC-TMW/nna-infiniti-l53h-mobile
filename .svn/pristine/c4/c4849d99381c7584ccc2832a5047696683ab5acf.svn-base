@@ -1,0 +1,242 @@
+(function(NNA, $) {
+
+	NNA.PageController = Class.extend({
+		init : function(options) {
+			// configurable options
+			this.options = {};
+			$.extend(true, this.options, options);
+
+			// collect elements
+			this.bodyElement = $(document.body);
+			this.windowElement = $(window);
+
+			// Pano
+			this.panoHolder = $("#pano-holder");
+			this.panoElement = $('#pano');
+
+			// INIT
+			this.bindLinkTracking("cmp","cmp","sign_up");
+			this.attach();			
+			this.tracker = new NNA.CRMTracker({
+				queuedMode: true,
+				queueInterval: 750
+			});
+			this.footer = new NNA.Footer();
+						
+			debug.info('NNA.PageController: initialized');			
+		},
+
+		// attach event handlers
+		attach : function() {
+			var self = this;
+			
+			this.bodyElement.on('click', 'header a, nav.main a', function(clickEvt){
+				// publish event
+				$.publish('/nna/crm/placement/top_nav',[clickEvt]);
+			});
+			
+			this.bodyElement.on('click', 'nav.sub a', function(clickEvt){
+				// publish event
+				$.publish('/nna/crm/placement/bottom_nav',[clickEvt]);
+			});
+
+			this.bodyElement.on('click', 'footer .share a', function(clickEvt){
+				$.publish('/nna/crm/share',[clickEvt]);
+			});
+
+			$("video").on("playing", function() {
+				$.publish('/nna/crm/videostart', this);
+			});
+
+			$("video").on("ended", function() {
+				$.publish('/nna/crm/videoend', this);
+			});
+
+			// Pano Events
+			$('#launch-pano').click(function(e){
+				e.preventDefault();
+
+				var pano_xml = "gallery/krpano/tour.xml";
+				var link_xml = $(e.target).attr("data-pano-xml");
+				if(link_xml)
+					pano_xml = link_xml;
+
+				self.showPano(pano_xml);
+				$.publish('/nna/crm/pano',{'story':"Interior Pano", 'view':"Interior_front"});
+			});
+
+			$('.close-pano').click(function(e){
+				e.preventDefault();
+				self.hidePano();
+			});
+					
+			self.initDisclaimers();
+			self.initDeepLinks();
+		},
+
+		// Init the Disclaimers drop down for view all disclaimers and microsite disclaimer link
+		initDisclaimers : function() {
+			$('footer .disclaimers a.view-page-disclaimers, footer .legal .microsite-disclaimer').toggle(function(e) {
+				e.preventDefault();
+				$('#page-disclaimers').slideDown();
+
+				// toggle open/close symbol
+				if($('.view-page-disclaimers span').text() == '+'){
+					$('.view-page-disclaimers span').text('-');   
+				} else {
+					$('.view-page-disclaimers span').text('+');
+				}
+			}, function(e) {
+				e.preventDefault();
+				$('#page-disclaimers').slideUp();
+
+				// toggle open/close symbol
+				if($('.view-page-disclaimers span').text() == '+'){
+					$('.view-page-disclaimers span').text('-');   
+				} else {
+					$('.view-page-disclaimers span').text('+');
+				}
+			});
+		},
+		
+		// Init the deep link engine parsing the query string for chapter and scrolling down to active element
+		initDeepLinks : function() {
+			$(window).bind("hashchange", function(e) {
+				// In jQuery 1.4, use e.getState( "url" );
+				var queryString = $.deparam.querystring();
+				
+				if(queryString.chapter && $("#"+queryString.chapter).offset()){
+					$('html, body').animate({
+						scrollTop: $("#"+queryString.chapter).offset().top
+					}, 500);					
+				}
+			});
+			$(window).trigger("hashchange");
+		},
+		
+		// Bind tracking Querystring to SignUp URL
+		bindLinkTracking: function(inBoundCampaignCodeKey,outBoundCampaignCodeKey,linkClass){
+			var trackingLink = $("a." + linkClass);			
+			var currentTrackingHref = trackingLink.attr("href"); 				
+			
+			var campaignCodeValue = this.getQueryStringByKeyName(inBoundCampaignCodeKey);
+			var campaignCodeCookie = NNA.Utils.getCookie(inBoundCampaignCodeKey);
+			
+			if(campaignCodeValue != "")
+			{
+				NNA.Utils.setCookie(inBoundCampaignCodeKey, campaignCodeValue, {expiryDays:0, path: '/'});											
+			}
+			else
+			{
+				if(campaignCodeCookie != null)
+				{
+					campaignCodeValue = NNA.Utils.getCookie(inBoundCampaignCodeKey);
+				}
+				else
+				{
+					campaignCodeValue = "";
+				}
+			}
+			if(campaignCodeValue != "")
+			{
+				if (currentTrackingHref.indexOf("?") >= 0)
+				{
+					currentTrackingHref = currentTrackingHref + "&" + outBoundCampaignCodeKey + "=" +campaignCodeValue;
+				}
+				else
+				{
+					currentTrackingHref = currentTrackingHref + "?" + outBoundCampaignCodeKey + "=" +campaignCodeValue;
+				}
+					
+				trackingLink.attr("href",currentTrackingHref);	
+			}			
+		},
+		
+		// GetQuery String Value By KeyName
+		getQueryStringByKeyName: function(KeyName){
+			  KeyName = KeyName.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+			  var regexS = "[\\?&]" + KeyName + "=([^&#]*)";
+			  var regex = new RegExp(regexS);
+			  var results = regex.exec(window.location.search);
+			  if(results == null)
+				return "";
+			  else
+				return decodeURIComponent(results[1].replace(/\+/g, " "));
+		},
+		
+		// show exterior 360
+		showExterior: function(){
+			var self = this;
+			var startFrame = 3;
+			var hintElement = this.threeSixtyWrapper.find('.hint');
+
+			// Create image array
+			var images = [];
+			for(var i = 0; i < 43; i++){
+				var index = (i < 10) ? "0"+i : i;
+				images.push('<%= asset_path :images, "gallery/360/" %>' + index + ".jpg");
+			}
+
+			// preload images
+			$.publish('/nna/effects/showLoading');
+			NNA.Utils.preloadImages(images).done(function(){
+				// show exterior threesixty and back button
+				//self.threeSixtyWrapper.show();
+				//self.backButton.show();
+
+				// threesixty is only created the first time after that we just reuse the existing one
+				var threesixty = self.threeSixtyElement.data('ThreeSixty');
+				if(threesixty === undefined){
+					// init threesixty
+					self.threeSixtyElement.threesixty({
+						useBuiltInLoader: false,
+						imageList: images,
+						width: 300,
+						height: 180,
+						frameSteps: 8,
+						startFrame : startFrame,
+						reverse: true,
+						redrawOnResize: false,
+						parentElement: $(window),
+						onLoadComplete: function(){
+							hintElement.show();
+						},
+						onRotate: function(){
+							$.publish('/nna/crm/360',"Exterior 360");
+							hintElement.hide();
+						},
+						onRotateEnd : function(frame, isAutoPlay) {
+							hintElement.show();
+						}
+					});
+				}
+				
+				$.publish('/nna/effects/hideLoading');
+			}).fail(function(){
+				$.publish('/nna/effects/hideLoading');
+			});
+		},		
+		// show panorama
+		showPano: function(xml_path){
+			var self = this;
+
+			$.publish('/nna/pano/showPano');
+
+			var viewer = createPanoViewer({target:"pano", swf:"<%= asset_path :images, 'gallery/krpano/swf/krpano.swf' %>", xml:"<%= asset_path :images, '' %>"+xml_path, html5:"always", passQueryParameters:false});
+			
+			if ( viewer.isHTML5possible() ){
+				// embed the html5 viewer
+				this.panoHolder.show();
+				viewer.embed();
+			}else{
+				// show 'no html5 support' message
+			}
+		},
+		hidePano: function(){
+			$.publish('/nna/pano/hidePano');
+			this.panoHolder.hide();	
+			this.panoElement.empty();	
+		}
+		
+	});
+})(NNA, jQuery); 

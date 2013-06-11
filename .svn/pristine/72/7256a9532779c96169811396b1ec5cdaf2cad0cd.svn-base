@@ -1,0 +1,40 @@
+<!-- primary nav -->
+<nav class="main wf">
+	<ul>
+		<li class="nav_home">
+			<%= link_to I18n.t("nav.home.label"), I18n.t("nav.home.link"), :class=> "ir" %>
+		</li>
+		<% if @current_nav < 4 %>
+		<li class="nav_design<% if @current_nav == 1 %> current<% end %>">
+			<%= link_to I18n.t("nav.design.label"), I18n.t("nav.design.link") %>
+		</li>
+		<li class="nav_performance<% if @current_nav == 2 %> current<% end %>">
+			<%= link_to I18n.t("nav.performance.label"), I18n.t("nav.performance.link") %>
+		</li>
+		<li class="nav_technology<% if @current_nav == 3 %> current<% end %>">
+			<%= link_to I18n.t("nav.technology.label"), I18n.t("nav.technology.link") %>
+		</li>
+		<% end %>
+		<% if @current_nav == 4 %>
+		<li class="nav_features current">
+			<%= link_to I18n.t("nav.features.label"), I18n.t("nav.features.link") %>
+		</li>
+		<% end %>
+		<% if @current_nav == 5  %>
+		<li class="nav_updates current">
+			<%= link_to I18n.t("nav.updates.label"), I18n.t("nav.updates.link") %>
+		</li>
+		<% end %>
+		<% if @current_nav > 5 && @current_nav < 9  %>
+		<li class="nav_gallery<% if @current_nav == 6 %> current<% end %>">
+			<%= link_to I18n.t("nav.gallery.ext_label"), I18n.t("nav.gallery.link") %>
+		</li>
+		<li class="nav_gallery_int<% if @current_nav == 7 %> current<% end %>">
+			<%= link_to I18n.t("nav.gallery.int_label"), I18n.t("nav.gallery.int_link") %>
+		</li>
+		<li class="nav_gallery_360<% if @current_nav == 8 %> current<% end %>">
+			<%= link_to I18n.t("nav.gallery.360_label"), I18n.t("nav.gallery.360_link") %>
+		</li>
+		<% end %>
+	</ul>
+</nav>

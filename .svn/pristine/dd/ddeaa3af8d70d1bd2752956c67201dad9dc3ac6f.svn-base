@@ -1,0 +1,7 @@
+<% wrap_layout :shell do %>
+	<div id="wrapper">
+		<%= partial "partials/header" %>
+		<%= yield_content :pagecontent %>
+		<%= partial "partials/footer" %>
+	</div>
+<% end %>

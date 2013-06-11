@@ -1,0 +1,51 @@
+---
+crmpageid: 31021
+---
+<% @current_nav = 10 %> <!-- todo -->
+
+<% content_for :pageid do %>page_models<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("models.page_title") %></title>
+<meta name="description" content="<%= I18n.t("models.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("models.page_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("models.page_canonical") %>" addthis:description="<%= I18n.t("models.page_description") %>" addthis:title="<%= I18n.t("models.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<!-- page content -->
+<section id="models">
+  <article id="intro" class="visuallyhidden">
+    <h1><%= I18n.t("models.header") %></h1>
+  </article>
+  <%= partial("partials/item_nav", :locals => { 
+    :link1 => {:class => "active chevron", :link => I18n.t("models.item_nav1.link"), :text => I18n.t("models.item_nav1.text")},
+    :link2 => {:class => "inactive", :link => I18n.t("models.item_nav2.link"), :text => I18n.t("models.item_nav2.text")}
+  }) %>
+  <article>
+    <div id="collapseBtn">
+      <button class="collapse"><%= I18n.t("models.collapse") %></button>
+    </div>
+    <%= partial "partials/trims", :locals => {:onQuotePage => false} %>
+  </article>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+  <!-- todo -->
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageControllers.Models();
+	}); 
+</script>
+<% end %>

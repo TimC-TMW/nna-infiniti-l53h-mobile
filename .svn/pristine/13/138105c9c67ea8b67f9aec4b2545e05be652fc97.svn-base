@@ -1,0 +1,57 @@
+---
+layout: false
+---
+
+
+Internal Testing
+
+Video Player embed:<br />
+<iframe src="http://www.ustream.tv/embed/2015846" width="608" height="368" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe><br /><a href="http://www.ustream.tv/" style="padding: 2px 0px 4px; width: 400px; background: #ffffff; display: block; color: #000000; font-weight: normal; font-size: 10px; text-decoration: underline; text-align: center;" target="_blank">Live stream by Ustream</a>
+
+Social Stream Embed:<br />
+<iframe width="468" scrolling="no" height="586" frameborder="0" style="border: 0px none transparent;" src="http://www.ustream.tv/socialstream/2015846"></iframe>
+
+HandRaiser:<br />
+<form id="updates_form" method="post" action="http://www.qa2.nissanusa.com/dealercenter/rest/signUp" name="updatesForm">
+	<fieldset>
+		<input id="vehiclecode" type="hidden" value="GCP" name="vehicleCode">
+		<input id="leadsourceid" type="hidden" value="10059" name="leadSourceId">
+
+		<input id="optinSubType" type="hidden" value="MARITZTYPE1" name="optinSubType">
+		<input id="language" type="hidden" value="en" name="language">
+		<input id="year" type="hidden" value="2014" name="year">
+
+		<input id="format" type="hidden" value="json" name="format">
+
+		<h2><%= I18n.t("handraiser.request") %></h2>
+		<h3><%= I18n.t("handraiser.tagline") %></h3>
+		<p><%= I18n.t("handraiser.info") %></p>
+		<h4><%= I18n.t("handraiser.required") %></h4>
+		<ol>
+			<li><label for="firstName"><%= I18n.t("handraiser.field_firstname") %>*</label><input id="uf_firstname" type="text" name="firstName" /></li>
+			<li><label for="lastName"><%= I18n.t("handraiser.field_lastname") %>*</label><input id="uf_lastname" type="text" name="lastName" /></li>
+			<li><label for="email"><%= I18n.t("handraiser.field_email") %>*</label><input id="uf_email" type="text" name="emailAddress" /></li>
+			<li><label for="emailAddressConfirm"><%= I18n.t("handraiser.field_email") %>*</label><input id="uf_email" type="text" name="emailAddressConfirm" /></li>
+			<li><label for="zipCode"><%= I18n.t("handraiser.field_zipcode") %>*</label><input id="uf_zipcode" type="text" name="zipCode" /></li>
+			<li><input id="uf_submit" type="submit" value="<%= I18n.t("handraiser.field_submit") %>" name="submit" onclick="htmlClick();"/></li>
+		</ol>
+	</fieldset>
+</form>
+<script type="text/javascript">
+function htmlClick(){
+	document.forms[0].action = 'http://www.qa2.nissanusa.com/dealercenter/rest/signUp/list'
+	document.forms[0].format.value='html';
+	document.forms[0].submit();
+}
+function xmlClick(){
+	document.forms[0].action = 'http://www.qa2.nissanusa.com/dealercenter/rest/signUp'
+	document.forms[0].format.value='xml';
+	document.forms[0].submit();
+}
+function jsonClick(){
+	document.forms[0].action = 'http://www.qa2.nissanusa.com/dealercenter/rest/signUp'
+	document.forms[0].format.value='json'; 
+	document.forms[0].submit();
+}
+</script>
+

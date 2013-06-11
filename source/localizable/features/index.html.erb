@@ -1,0 +1,171 @@
+---
+crmpageid: 30949
+---
+<% @current_nav = 4 %>
+
+<% content_for :pageid do %>page_features<% end %>
+
+<% content_for :seo do %>
+<title><%= I18n.t("features.page_title") %></title>
+<meta name="description" content="<%= I18n.t("features.page_description") %>">
+<link rel="canonical" href="<%= I18n.t("features.page_canonical") %>" />
+<% end %>
+
+<% content_for :addthis do %>
+addthis:url="<%= I18n.t("features.page_canonical") %>" addthis:description="<%= I18n.t("features.page_description") %>" addthis:title="<%= I18n.t("features.page_title") %>"
+<% end %>
+
+<% content_for :pagecss do %>
+<% end %>
+
+<% content_for :pagecontent do %>
+<!-- page content -->
+<section id="features" class="wf">
+	<article id="intro" class="visuallyhidden">
+		<h1><%= I18n.t("features.header") %></h1>
+	</article>
+	<article id="design" class="clearfix">
+		<h2><%= I18n.t("design.intro.header") %></h2>
+		<ul>
+			<li>
+				<% link_to I18n.t("nav.design.link"), :query => "chapter=design-overview" do %>
+				<h3><%= I18n.t("design.overview.header") %></h3>
+				<%= image_tag "features/design-overview.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.design.link"), :query => "chapter=exterior-360" do %>
+				<h3><%= I18n.t("design.exterior.header") %></h3>
+				<%= image_tag "features/exterior-360.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.design.link"), :query => "chapter=adaptive-headlamps" do %>
+				<h3><%= I18n.t("design.headlights.header") %></h3>
+				<%= image_tag "features/adaptive-headlamps.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.design.link"), :query => "chapter=luxury-seating" do %>
+				<h3><%= I18n.t("design.seating.header") %></h3>
+				<%= image_tag "features/luxury-seating.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.design.link"), :query => "chapter=intuitive-interior" do %>
+				<h3><%= I18n.t("design.interior.header") %></h3>
+				<%= image_tag "features/intuitive-interior.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.design.link"), :query => "chapter=interior-panorama" do %>
+				<h3><%= I18n.t("design.pano.header") %></h3>
+				<%= image_tag "features/interior-panorama.jpg", :width=>109 %>
+				<% end %>
+			</li>
+		</ul>
+	</article>
+	<article id="performance" class="clearfix">
+		<h2><%= I18n.t("performance.intro.header") %></h2>
+		<ul>
+			<li>
+				<% link_to I18n.t("nav.performance.link"), :query => "chapter=zero-lift-aerodynamics" do %>
+				<h3><%= I18n.t("performance.handling.header") %></h3>
+				<%= image_tag "features/zero-lift-dynamics.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.performance.link"), :query => "chapter=sport-model" do %>
+				<h3><%= I18n.t("performance.sportmodel.header") %></h3>
+				<%= image_tag "features/sport-model.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.performance.link"), :query => "chapter=engines" do %>
+				<h3><%= I18n.t("performance.engines.header") %></h3>
+				<%= image_tag "features/engines.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.performance.link"), :query => "chapter=performance-hybrid" do %>
+				<h3><%= I18n.t("performance.hybrid.header") %></h3>
+				<%= image_tag "features/performance-hybrid.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.performance.link"), :query => "chapter=direct-adaptive-steering" do %>
+				<h3><%= I18n.t("performance.steering.header") %></h3>
+				<%= image_tag "features/direct-adaptive-stearing.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.performance.link"), :query => "chapter=personalized-drive-modes" do %>
+				<h3><%= I18n.t("performance.drivemodes.header") %></h3>
+				<%= image_tag "features/personalized-drive-modes.jpg", :width=>109 %>
+				<% end %>
+			</li>
+		</ul>
+	</article>
+	<article id="technology" class="clearfix">
+		<h2><%= I18n.t("technology.intro.header") %></h2>
+		<ul>
+			<li>
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=digital-environment" do %>
+				<h3><%= I18n.t("technology.environment.header") %></h3>
+				<%= image_tag "features/digital-environment.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=infiniti-intouch" do %>
+				<h3><%= I18n.t("technology.intouch.header") %></h3>
+				<%= image_tag "features/infiniti-intouch.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=infiniti-connection" do %>
+				<h3><%= I18n.t("technology.connection.header") %></h3>
+				<%= image_tag "features/infiniti-connection.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=bose-audio" do %>
+				<h3><%= I18n.t("technology.audio.header") %></h3>
+				<%= image_tag "features/bose-audio.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li class="backup-collision-intervention">
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=back-up-collision-intervention" do %>
+				<h3><%= I18n.t("technology.collision.header") %></h3>
+				<%= image_tag "features/back-up-collision-intervention.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=safety-shield" do %>
+				<h3><%= I18n.t("technology.safetyshield.header") %></h3>
+				<%= image_tag "features/safety-shield.jpg", :width=>109 %>
+				<% end %>
+			</li>
+			<li>
+				<% link_to I18n.t("nav.technology.link"), :query => "chapter=around-view-monitor" do %>
+				<h3><%= I18n.t("technology.monitor.header") %></h3>
+				<%= image_tag "features/around-view-monitor.jpg", :width=>109 %>
+				<% end %>
+			</li>
+		</ul>
+	</article>
+	<%= partial "partials/sub_nav" %>
+</section>
+<% end %>
+
+<% content_for :pagedisclaimers do %>
+<% end %>
+
+<% content_for :pagescript do %>
+<script>
+	// init page
+	NNA.pageInit(function() {
+		new NNA.PageController();
+		jQuery.publish('/nna/crm/pageload');
+	}); 
+</script>
+<% end %>

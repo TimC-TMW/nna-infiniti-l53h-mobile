@@ -1,0 +1,63 @@
+(function(NNA, $) {
+
+	NNA.PageControllers.Gallery = NNA.PageController.extend({
+		init : function(options) {
+			this._super(options);
+
+			this.gallery = $('#slider-container');
+			
+			this.initGallery();
+			//this.attachGalleryEvents();
+
+			debug.info('NNA.PageControllers.Gallery: initialized');
+		},
+		
+		// initialize the swipe gallery
+		initGallery: function(){
+			var self = this,
+					galleryStart = 1,
+					queryString = $.deparam.querystring(),
+					sliderLength = $('#slider-nav li').length,
+					feature;
+
+				// deep link into a feature if we can parse the query string into a number and it's not greater than or less than the number of pics we have
+				if(queryString.feature && !isNaN(queryString.feature)){
+					feature = parseInt(queryString.feature, 10);
+				} 
+				if(feature <= sliderLength && feature > 0){
+					galleryStart = parseInt(queryString.feature, 10);
+				}
+
+			// gallery images
+			this.gallery.iosSlider({
+				startAtSlide: galleryStart,
+				scrollbar: false,
+				snapToChildren: true,
+				desktopClickDrag: true,
+				infiniteSlider: true,
+				autoSlide: false,
+				navSlideSelector: $('#slider-nav li, #slider-bullets li'),
+				onSliderLoaded: function(args){
+					self.updateNav(args);
+				},
+				onSlideChange: function(args){
+					self.updateNav(args);
+				},
+				onSlideComplete: function(args){
+					$.publish('/nna/gallery/slideChange',[args.currentSlideNumber]);	
+				}
+			});
+			
+			// CRM Tracking
+			if($('section').hasClass('exterior')){
+				jQuery.publish('/nna/crm/extgalleryload', galleryStart);
+			}else if ($('section').hasClass('interior')){
+				jQuery.publish('/nna/crm/intgalleryload', galleryStart);
+			}
+		},
+		updateNav:function(args){
+			$('#slider-nav li, #slider-bullets li').removeClass('current');
+			$('#slider-nav li, #slider-bullets li').eq(args.currentSlideNumber-1).addClass('current');
+		}
+	});
+})(NNA, jQuery); 

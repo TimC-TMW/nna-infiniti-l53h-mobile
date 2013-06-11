@@ -1,0 +1,42 @@
+<%# puts models %>
+<ul class="specs" data-category="<%= I18n.t("specs.item_nav1.text") %>">
+  <%# output all specifications %>
+  <% @cfg.model.specs.each do |spec| %>
+    <li class="list">
+      <header>
+        <h3><%= spec.category %></h3>
+      </header>
+      <article>
+        <ul class="sublist">
+          <% spec.items.each do |item| %>
+              <% if item.items and item.items != nil %>
+                <% if specExists(item, trim_code) %>                
+                  <li>
+                    <h3><%= item.title %></h3>
+                    <ul class="sub-sublist">
+                      <% item.items.each do |sub_item| %>
+                        <% if sub_item.spec and sub_item.vals[trim_code] != -1 %>
+                          <li><%= specItem(sub_item) %></li>
+                        <% elsif sub_item.items and sub_item.items != nil %>
+                          <% sub_item.items.each do |sub_sub_item| %>
+                            <% if sub_sub_item.spec and sub_sub_item.vals[trim_code] != -1 %>
+                              <li><%= specItem(sub_sub_item) %></li>
+                            <% end %>
+                          <% end %>
+                        <% end %>
+                      <% end %>
+                    </ul>
+                  </li>
+                <% end %>
+              <% else %>
+                <% if item.spec and item.vals[trim_code] != -1 %>
+                  <li><%= specItem(item) %></li>
+                <% end %>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </article>
+    </li>
+  <% end %>
+</ul>

@@ -1,0 +1,11 @@
+source "http://rubygems.org/"
+
+#gem "middleman", :git => "https://github.com/sc0ttman/middleman.git", :branch => "3.0.6" #updated link_to helper now supports :query
+gem "middleman", '~>3.0.12'
+gem "middleman-livereload", '~> 3.0.1'
+gem "money", '~> 4.0.2'
+gem 'libv8', '~> 3.11.8', :platforms => :ruby
+gem 'therubyracer', :platforms => :ruby
+gem "middleman-minify-html"
+gem "win32-open3-19", :platforms => :mingw
+gem 'wdm', '~> 0.1.0',  :platforms => :mingw

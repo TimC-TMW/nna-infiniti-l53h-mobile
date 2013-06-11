@@ -1,0 +1,85 @@
+(function(NNA, $) {
+
+  NNA.PageControllers.Models = NNA.PageController.extend({
+    init : function(options) {
+      this._super(options);
+      this.collapsed = false;
+
+      var that = this;
+
+      // swap item_nav elements
+      $('#item_nav button').click(function(e) {
+        e.preventDefault();
+        //this = nav element
+        //that = NNA.PageControllers.Models
+        if(this.className === "item_nav_inactive"){
+          that.swap(this);
+          that.swapEngine();
+        }
+      });
+
+      // collapse/expand button
+      $('button.collapse').click(function(){
+        //remove any click handlers
+        $('.collapsed').off('click');
+        if(that.collapsed) {
+          that.expand();
+          that.collapsed = false;
+        }
+        else {
+          that.collapse();
+          that.collapsed = true;
+          //attach click handler for collapsed price link
+          that.priceLinkHandler();
+        }
+      });
+
+      // set inital state
+      $('.HYB').hide().addClass('inactive');
+      $('.STD').addClass('active');
+      $.publish('/nna/models/load', ['Conventional']);
+
+      debug.info('NNA.PageControllers.Models: initialized');
+    },
+    priceLinkHandler: function() {
+      $('.collapsed').click(function() {
+        var specPath = NNA.PATHS.CONTEXT + 'models/' + $(this.parentElement).data('url') + '.html';
+        // Open appropriate spec page
+        window.location = specPath;
+      });
+    },
+    collapse: function() {
+      $('button.collapse').html('<%= I18n.t("models.expand") %>');
+      $('div.base, ul.features').hide(150);
+      $('div.price').addClass('collapsed');
+      $.publish('/nna/models/collapse');
+      debug.info('NNA.PageControllers.Models: collapsed');
+    },
+    expand: function() {
+      $('button.collapse').html('<%= I18n.t("models.collapse") %>');
+      $('div.base, ul.features').show(150);
+      $('.collapsed').removeClass('collapsed');
+      $.publish('/nna/models/expand');
+      debug.info('NNA.PageControllers.Models: expanded');
+    },
+    swap: function (navitem) {
+      $('.item_nav_active').removeClass('item_nav_active chevron').addClass('item_nav_inactive')
+      $(navitem).removeClass('item_nav_inactive').addClass('item_nav_active chevron');
+
+      if($(navitem).index() === 0) $.publish('/nna/models/load', ['Conventional']);
+      else $.publish('/nna/models/load', ['Hybrid']);
+
+      debug.info('NNA.PageControllers.Models: swapped item nav elements');
+    },
+    swapEngine: function () {
+      var inactive = $('.inactive').removeClass('inactive');
+      $('.active').removeClass('active').addClass('inactive');
+      inactive.addClass('active');
+      
+      $('.inactive').hide();
+      $('.active').show();
+
+      debug.info('NNA.PageControllers.Models: swapped engine class');
+    }
+  });
+})(NNA, jQuery); 

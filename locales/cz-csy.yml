@@ -1,0 +1,353 @@
+cz-csy:
+  #CONFIG
+  context_path: "/cz-csy/"  
+  country: "cz"
+  language: "csy"
+  booth: "tdi-infiniticarscz"
+  metric: "metrics.infiniticars.cz"
+  #HEADER
+  header:
+    logo: "Infiniti"
+    link: "/cz-csy/index.html"
+    signup: "AKTUALITY"
+    signup_link: "http://mobile.infiniti.eu/csy-cz/request_further_information?model=q50"
+  #NAV
+  nav:
+    home:
+      label: "HLAVNÍ STRÁNKA"
+      link: "/cz-csy/index.html"
+    design:
+      label: "DESIGN"
+      link: "/cz-csy/design/index.html"
+    performance:
+      label: "VÝKON"
+      link: "/cz-csy/performance/index.html"
+    technology:
+      label: "TECHNOLOGIE"
+      link: "/cz-csy/technology/index.html"
+    features:
+      label: "VŠECHNY PRVKY"
+      link: "/cz-csy/features/index.html"
+    gallery:
+      label: "ZOBRAZIT GALERII >"
+      link: "/cz-csy/gallery/index.html"
+      ext_label: "Galerie ext."
+      int_label: "Galerie int."
+      int_link: "/cz-csy/gallery/interior.html"
+      360_label: "360s"
+      360_link: "/cz-csy/gallery/360s.html"
+    updates:
+      label: "AKTUALITY"      
+  subnav:
+    design: 
+      label: "ATRAKTIVNÍ"
+      label2: "DESIGN >"
+    performance:
+      label: "DYNAMICKÝ"
+      label2: "VÝKON >"
+    technology:
+      label: "INTUITIVNÍ"
+      label2: "TECHNOLOGIE >"
+    features:
+      label: "VŠECHNY PRVKY >"
+    gallery:
+      label: "ZOBRAZIT GALERII >"      
+  #FOOTER
+  footer:
+    disclaimers: 
+      header: "Právní upozornění ke stránce:"
+      label: "Zobrazit upozornění ke stránce"
+      plus: "+"
+    share:
+      label: "Sdílet:"
+      email: "Sdílet e-mailem"
+      facebook: "Sdílet na Facebooku"
+      twitter: "Sdílet na Twitteru"      
+    follow:
+      label: "Sledovat:"      
+      facebook: "Sledovat na Facebooku"
+      facebook_link: "https://www.facebook.com/infinitieurope"
+      twitter: "Sledovat na Twitteru"
+      twitter_link: "https://twitter.com/InfinitiEurope"
+      you_tube: "Sledovat na YouTube"
+      you_tube_link: "http://www.youtube.com/user/infinitieurope"
+    back:
+      header: "Jiné cíle:"
+      label: "Infiniti Česká republika"
+      link: "http://mobile.infiniti.eu/csy-cz/"
+    fullsite:
+      label: "Zobrazit úplné mikrostránky modelu Q50"
+      link: "http://www.infiniticars.cz/all-new-q50/"
+    feedback:
+      header: "Ohlasy a právní ustanovení:"  
+    privacy:
+      label: "Právní ustanovení a ochrana údajů "
+      link: "http://mobile.infiniti.eu/csy-cz/legal_privacy"
+    microdisclaimer:
+      label: "Právní omezení k mikrostránkám"
+      link: "#"
+  #HOME PAGE
+  home:
+    page_title: "Zcela nový model Infiniti Q50 | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Představujeme zcela nový model Infiniti Q50. Seznamte se s designem, výkonem a technologiemi tohoto nového revolučního modelu."
+    page_canonical: "/csy-cz/index.html"
+    headline:
+      intro: "Představujeme zcela nový model Infiniti Q50"
+      q50: "Infiniti Q50"
+    tagline: "K DISPOZICI OD PODZIMU 2013"
+    start: "Vydejte se na cestu:"
+  #DESIGN PAGE
+  design:
+    page_title: "Zcela nový model Infiniti Q50: Design | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Seznamte se s atraktivním designem zcela nového modelu Infiniti Q50, povznášejícím výrazem elegance a luxusu."
+    page_canonical: "/cz-csy/design/index.html"
+    intro:
+      header: "ATRAKTIVNÍ DESIGN"
+      copy: "Výraz povznášejícího designu"
+    overview:
+      header: "Design celkově"
+      copy: "Design, který porušuje pravidla, místo aby se jimi řídil, popírá konvence, místo aby je dodržoval, a odmítá očekávání, místo aby je potvrzoval – jedině takový design má dostatek svobody k tomu, aby pozvedl tvar i funkci k novým výšinám inspirovaným vašimi potřebami."
+    exterior:
+      header: "Exteriér ze všech stran"
+      copy: "Chcete-li si model Q50 prohlédnout ze všech stran, pohybem prstu jej otáčejte."
+    headlights:
+      header: "Adaptivní světlomety"
+      copy: "Působivé osvětlení s nezaměnitelným pohledem. Jedinečný design soustředěný kolem dvojice vícerežimových světlometů LED, které doplňují světla pro denní svícení. Osvětlení se inteligentně přizpůsobuje světelným podmínkám. Světla se automaticky rozsvěcují s klesající viditelností a technologie SmartBeam Assist nezávisle vypíná dálková světla na straně řidiče či spolujezdce v reakci na blížící se vůz. Optimální osvětlení za všech okolností přispívá k dokonalé pohodě při řízení."
+    seating:
+      header: "Luxusní sedadla"
+      copy: "Luxusně navržená sedadla s revoluční ergonomikou zajišťují optimální oporu horní části těla pro naprostou pohodu při řízení. Jediné, co s nimi cítíte, je propojení mezi řidičem a vozem. [1]"
+    interior:
+      header: "Intuitivní interiér"
+      copy: "Intuitivní interiér s ručně leštěnými obklady z javorového dřeva. Umělecky prošívané kožené čalounění. Umělecky vyvážené povrchy. Inteligentní rozmístění přístrojů. Každý prvek je intuitivně umístěn s ohledem na pohodlí a snadné ovládání. Vše je dokonale zarámováno výraznou palubní deskou ve tvaru dvojitého oblouku. Vítejte ve světě luxusu, který je zcela zaměřen na vás, ať již sedíte za volantem nebo se jen vezete. "
+    pano:
+      header: "Pohled do interiéru"
+      copy: "Seznamte se s luxusem ze všech stran. Klikněte nebo klepněte pro zahájení. Tažením prstu po dotykovém displeji se můžete pohybovat v interiéru zcela nového modelu Infiniti Q50. Chcete-li pohled přiblížit, posuňte palec a ukazováček na displeji směrem od sebe. Chcete-li pohled oddálit, posuňte palec a ukazováček směrem k sobě."
+  #PERFORMANCE PAGE
+  performance:
+    page_title: "Zcela nový model Infiniti Q50: Výkon | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Vyzkoušejte dynamický výkon zcela nového modelu Infiniti Q50, který přináší silný motor se zvýšenou účinností."
+    page_canonical: "/cz-csy/performance/index.html"
+    intro:
+      header: "DYNAMICKÝ VÝKON"
+      copy: "Luxus bez konformity"      
+    handling:
+      header: "Aerodynamika s nulovým vztlakem"
+      copy: "Proud vzduchu, tradiční nepřítel výkonu, může být nyní i spojencem. Horní a spodní část karoserie modelu Q50 přesně směruje proud vzduchu nad vozem, pod ním a kolem něj. Výsledkem je aerodynamika s nulovým vztlakem, která zajišťuje stabilní a předvídatelné ovládání vozu při všech rychlostech. Tento komplexní přístup k aerodynamice v kombinaci s tužším odpružením pomáhá snižovat účinky vzdušných turbulencí a přináší zvýšený pocit stability a kontroly, a to i při rychlé jízdě."
+      video: "ovladatelnost"
+    sportmodel:
+      header: "Sportovní model"
+      copy: "Sportovní model Q50 okamžitě upoutá svým příznačným sportovním nárazníkem a jedinečným předním spoilerem. 19” kola z hliníkové slitiny s dělenými paprsky vybavená sportovními kotoučovými brzdami s maximálním brzdným výkonem jsou přesně zasazena do zaoblených blatníků. Vozy Infiniti jsou však zrozeny k pohybu. A jakmile usednete do koženého sedadla sportovního střihu, od sedmi vizionářských rozměrů výkonu vás dělí jen dotyk řadicí páčky z hořčíkové slitiny."
+      video: "sport"
+    engines:
+      header: "Motory"
+      copy: "Volba je na vás: strhující výkon systému Infiniti Direct Response Hybrid kombinujícího výkon motoru V6 o objemu 3,5 litru s elektromotorem pro zvýšení účinnosti – nebo citlivý čtyřválcový přeplňovaný dieselový motor o objemu 2,2 litru s výkonem 170 k a emisemi CO2 méně než 115 g/km. Jedna věc je jistá bez ohledu na to, jak se rozhodnete: nebudete muset dělat kompromisy mezi výkonem a účinností. [1]"      
+    hybrid:
+      header: "Výkonný hybrid"
+      copy: "Hybridní pohonná jednotka dokonale kombinuje výkon s účinností. Nabízí bleskovou akceleraci v závodním stylu i trvalý výkon při plynulé jízdě, který jedním slovem elektrizující. Běžné luxusní vozy ve snaze o zvýšení výkonu využívají motory s vyšším objemem. Model Q50 Hybrid je oproti tomu vybaven lithium-iontovou baterií, která dodává mohutný dodatečný výkon při akceleraci. Síla motoru je přenášena inteligentní dvojitou spojkou a výsledkem je maximální výkon a točivý moment při současné úspoře paliva. A co je ještě zajímavější, systém částečně dobíjí baterii při každém šlápnutí na brzdu."
+      video: "hybrid"
+    steering:
+      header: "Přímé adaptivní řízení"
+      copy: "Kontrola. Přesnost. Adaptabilita. Tři hlavní vlastnosti dokonalého řízení. Nyní, po deseti letech výzkumu a vývoje, jsou pevně ve vašich rukou. Systém přímého adaptivního řízení (DAS – Direct Adaptive Steering) jako první na světě využívá elektroniku ke zjednodušení řídicího mechanismu a dosažení pocitu vyšší přesnosti za volantem. Na nerovných silnicích odstraňuje nutnost neustálých zásahů do řízení, přispívá ke stabilitě a zmírňuje nadměrné vibrace způsobené jízdou."
+      video: "řízení"
+    drivemodes:
+      header: "Přizpůsobené jízdní režimy"
+      copy: "Revoluční systém přímého adaptivního řízení značky Infiniti umožňuje řidiči výběr ze tří přizpůsobených režimů řízení. Vyberte si sportovní nebo standardní režim – podle charakteru silnice nebo prostě podle nálady. Ve vlastním režimu si pak můžete sílu a odezvu řízení nastavit sami a plně tak převzít kontrolu nad silnicí do svých rukou. [2]"
+      video: "jízda"
+  #TECHNOLOGY PAGE
+  technology:
+    page_title: "Zcela nový model Infiniti Q50: Technologie | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Seznamte se s intuitivními technologiemi zcela nového modelu Infiniti Q50, s jeho moderními digitálními, zvukovými a bezpečnostními funkcemi."
+    page_canonical: "/cz-csy/technology/index.html"
+    intro:
+      header: "INTUITIVNÍ TECHNOLOGIE"
+      copy: "Neztrácejte kontakt"
+    environment:
+      header: "Digitální prostředí"
+      copy: "Přizpůsobitelné digitální prostředí – pamatuje si víc než jen vaši preferovanou polohu při sezení. Víc než jen vaše ideální nastavení klimatizace.Víc než jen vaši oblíbenou vyhlídkovou trasu domů nebo preferovaný jízdní režim. Je to prostředí, které vás zná. A v okamžiku, kdy rozpozná váš inteligentní klíč Infiniti, zajistí, aby váš vůz Q50 byl přesně takový, jaký jej chcete mít. Žádná magie, jen moderní technologie – i když se tomu někdy nechce věřit. [1]"
+    intouch:
+      header: "Infiniti InTouch&#8482;"
+      copy: "Váš život se odehrává ve spojení. Se systémem Infiniti InTouch&#8482; jste stále v kontaktu. Pomocí dvou obrazovek můžete dokonale ovládat a přizpůsobit si svůj digitální svět uvnitř vozu, aniž by vám cokoli uniklo. Aplikace systému Infiniti InTouch, e-mail, navigaci, synchronizaci s telefonem a další funkce můžete ovládat dotykem nebo hlasovými příkazy. Ať již cestujete kamkoli, nikdy neztratíte spojení se světem. [2]"
+    connection:
+      header: "Zůstaňte v kontaktu"
+      copy: ""
+    audio:
+      header: "Zvukový systém BOSE<sup>&reg;</sup>"
+      copy: "Zvuková aparatura nového modelu Q50 byla speciálně navržena techniky ze společnosti BOSE<sup>&reg;</sup>, kteří vytvořili zvukový systém nové generace. Soustava 14 reproduktorů včetně tří desetipalcových basových věrně a jasně reprodukuje nízké kmitočty a zajišťuje zdokonalený akustický tlak. Ostatní reproduktory jsou sladěny tak, aby vás obklopily zvukem optimalizovaným pro akustiku interiéru – odfiltrovaný hluk a zkreslení vytváří dojem živého vystoupení, který je u značky Infiniti jedinečný."
+    collision:
+      header: "Prevence srážky při couvání"
+      copy:  "Systém prevence srážky při couvání značky Infiniti znamená další významný pokrok v jistotě při řízení. Systém BCI při couvání pomáhá zjišťovat vozidla v příčném směru a předměty za vozidlem a upozorňuje řidiče vizuálními a zvukovými signály. V případě potřeby systém BCI automaticky aktivuje brzdy, aby zabránil srážce. [3]"
+    safetyshield:
+      header: "Infiniti Safety Shield"
+      copy: "Koncepce Infiniti Safety Shield je vyjádřením našeho komplexního přístupu k bezpečnosti. Model Q50 je vybaven několika vrstvami technologií, které pomáhají zachovávat bezpečnost a pohodlí. Neustále sledují podmínky, upozorňují vás na možná nebezpečí, pomáhají vyhnout se srážce a chrání vás a vaše cestující, pokud ke srážce přesto dojde."
+      risk_n_appeared:
+        label: "Nehrozí žádné nebezpečí>"
+        link: "/cz-csy/technology/safety-shield/risk-has-not-yet-appeared.html"
+      risk_appeared:
+        label: "Nehrozí žádné nebezpečí >"
+        link: "/cz-csy/technology/safety-shield/risk-has-appeared.html"
+      collision_m_occur:
+        label: "Může dojít ke srážce >"
+        link: "/cz-csy/technology/safety-shield/collision-may-occur.html"
+      collision_unavoidable: 
+        label: "Srážka je nevyhnutelná >"
+        link: "/cz-csy/technology/safety-shield/collision-unavoidable.html"
+      collision:
+        label: "Srážka >"      
+        link: "/cz-csy/technology/safety-shield/collision.html"
+    monitor:
+      header: "Around View<sup>&reg;</sup> Monitor"
+      copy: "Systém sledování okolí vozidla (AVM – Around View<sup>&reg;</sup> Monitor) od společnosti Infiniti jako první svého druhu na světě využívá vyspělé a současně intuitivní technologie k usnadnění parkování. Čtyři kamery umístěné ve voze vám poskytují pohled na vozidlo z ptačí perspektivy pod úhlem 360°. Společnost Infiniti tento systém dále zdokonalila o detekci pohybujících se objektů v okolí vozidla. Díky tomuto novému pohledu na svět kolem sebe dokážete s modelem Q50 zaparkovat i na těch nejtěsnějších místech. [4]"
+  #SAFETY SHIELD PAGES
+  safety_shield:
+    intro:
+      header: "Infiniti Safety Shield"
+      back:
+        label: "< Zpět na Safety Shield"
+        link: "/cz-csy/technology/index.html"
+    risk_n_appeared:
+      header: "Nehrozí žádné nebezpečí"
+      tagline: "Systém pomáhá při pohodlném řízení."
+      int_cc:
+        header: "Inteligentní tempomat pro celý rozsah rychlostí (ICC – Intelligent Cruise Control) [1]"
+        copy: "Automaticky přizpůsobuje rychlost podle provozu."
+      dist_control:
+        header: "Asistent kontroly vzdálenosti (DCA – Asistent Distance Control) [2]"
+        copy: "První systém svého druhu, který intuitivně pomáhá řidiči uvolnit plyn a sešlápnout brzdu v podmínkách provozu, které vyžadují časté brzdění."
+      around_view:
+        header: "Systém sledování okolí vozidla (AVM – Around View Monitor) s detekcí pohybujících se objektů [3]"
+        copy: "Around View<sup>&reg;</sup> Monitor je první systém svého druhu, který v kombinaci s detekcí pohybujících se objektů poskytuje řidiči virtuální pohled pod úhlem 360&deg; na parkovací místo, přičemž vizuálními a zvukovými signály upozorňuje na pohybující se předměty v dosahu."
+    risk:
+      header: "Nebezpečí v dohledu"
+      tagline: "Systém pomáhá řidiči obnovit bezpečné jízdní podmínky."
+      back_collision:
+        header: "Prevence srážky při couvání (BCI – Back-up Collision Intervention) [1]"
+        copy: "Radarové a sonarové senzory po stranách a v zadní části vozu pomáhají řidiče upozornit na riziko srážky s předmětem pohybujícím se v příčném směru při couvání. Pokud řidič pokračuje v pohybu tak, že hrozí srážka, systém automaticky aktivuje brzdy."
+      blind_spot:
+        header: "Systémy sledování slepého úhlu (Blind Spot Intervention, Blind Spot Warning) [2]"
+        copy: "Technologie, která jako první na světě upozorňuje řidiče na přítomnost jiného vozidla ve slepém úhlu při změně jízdního pruhu. Pomáhá také řidiči vrátit se s vozidlem zpět do středu pruhu."
+      lane_depart:
+        header: "Systémy prevence vyjetí z pruhu (LDW – Lane Departure Warning, LDP – Lane Departure Prevention) [3]"
+        copy: "Systém prevence vyjetí z pruhu, další jedinečná technologie svého druhu, rozpozná neúmyslný odklon od přímého směru a automaticky pomůže řidiči vrátit se zpět do středu pruhu."
+      predict_collision:
+        header: "Prediktivní varování před čelní srážkou (FCW – Forward Collision Warning) [4]"
+        copy: "Tento systém jako první na světě upozorňuje řidiče na nebezpečí, které leží mimo jeho zorné pole. Dokáže sledovat nejen relativní rychlost a vzdálenost od vozidla přímo vpředu, ale také od vozidla jedoucího před ním. "
+    may_occur:
+      header: "Může dojít ke srážce"
+      tagline: "Systém pomáhá řidiči obnovit bezpečné jízdní podmínky."
+      forward_brake:
+        header: "Nouzové přímé brzdění (FEB – Forward Emergency Braking) [1]"
+        copy: "<p>Když systém vyhodnotí, že je nutné zpomalit, upozorní řidiče zvukem a zobrazením na displeji, poté vytvoří sílu, která tlačí plynový pedál vzhůru a částečným přibrzděním pomůže řidiči zpomalit vůz.</p><p>Když systém zjistí, že hrozí riziko srážky, automaticky přibrzdí silněji, aby pomohl nebezpečí odstranit.</p>"
+    unavoidable:
+      header: "Srážka je nevyhnutelná"
+      tagline: "Je-li srážka nevyhnutelná, systém pomáhá minimalizovat zranění."
+      forward_brake:
+        header: "Nouzové přímé brzdění (FEB – Forward Emergency Braking) [1]"
+        copy: "Pokud nastane situace, že je srážka nevyhnutelná, systém upozorní řidiče, automaticky aktivuje brzdy a předepne bezpečnostní pás řidiče, aby snížil rychlost a minimalizoval škodu."
+    collision:
+      header: "Srážka"
+      tagline: "Dojde-li ke srážce, systém pomáhá minimalizovat zranění."
+      body_structure:
+        header: "Ochranné prvky a struktura karoserie [1]"
+        copy: "Pokročilý systém airbagů Infiniti; postranní airbagy proti bočnímu nárazu v obou řadách sedadel; bezpečnostní pásy na předních sedadlech s předepínáním, omezovači zatížení a upozorněním na zapnutí. Konstrukce karoserie s předními a zadními deformačními zónami."
+    back:
+      label: "< Zpět"
+      link: "/cz-csy/technology/index.html"
+    safety-shield:
+      label: "Zpět na Safety Shield"
+      link: "/cz-csy/technology/index.html"
+    forward:
+      label: "Vpřed >"
+      link: "/cz-csy/technology/index.html"
+  #ALL FEATURES PAGE
+  features:
+    page_title: "Zcela nový model Infiniti Q50: Výbava | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Seznamte se s bohatou výbavou zcela nového modelu Infiniti Q50, povznášejícího výrazu elegance a luxusu se zvýšeným výkonem, účinností a moderními digitálními, zvukovými a bezpečnostními funkcemi."
+    page_canonical: "/csy-cz/features/index.html"
+    header: "Bohatá výbava zcela nového modelu Infiniti Q50"
+  #HANDRAISER MODAL
+  updates:
+    page_title: "Zcela nový model Infiniti Q50: Aktuální informace | Infiniti Česká republika"
+    page_description: "Infiniti USA Official Site: Join the All-New Infiniti Q50 mailing list and try Infiniti Personal Assistant free for 90 days."
+    page_canonical: "/csy-cz/updates/index.html"
+    header: "Join the All-New 2014 Infiniti Q50 mailing list"
+  handraiser:
+    request: "Be One Of The First To Know"
+    tagline: "Join the All-New Infiniti Q50 mailing list and enjoy a complimentary, 90-day trial of Infiniti Personal Assistant.<sup>[1]</sup>"
+    info: "Join the Infiniti Q50 mailing list for preferred access to the latest on this breakthrough sedan. Then experience the refined service of Infiniti Personal Assistant free for 90 days. To take advantage of this unprecedented opportunity, simply register for Infiniti G updates by filling in the fields below."
+    details: 
+      label: "View Details"
+      link: "/cz-csy/join/"
+    required: "Required*"
+    field_firstname: "First Name"
+    field_lastname: "Last Name"
+    field_email: "Email"
+    field_zipcode: "ZIP Code"
+    field_submit: "JOIN MAILING LIST"
+    link_privacy: "Privacy Policy"
+    privacy: "Note: Your personal information is used for Infiniti communications purposes only. Providing your e-mail address allows Infiniti and its Retailers to contact you with marketing information about our products and services. This permission supersedes any national Do Not Call lists."
+    disclaimer:
+      text1: "[1] Click the link for Terms and to register: "
+      link1: "http://www.infinitipersonalassistant.com/Q50-event"
+      text2: ", if you do not receive an email confirmation. Available for US customers only and while supplies last.<br />Terms and Conditions apply. Infiniti Personal Assistant is complimentary the first 48 months; paid subscription required thereafter. Infiniti Personal Assistant communicates through a cellular network. Connection and signal strength may vary and be limited by location. Always give your full attention to driving. Avoid operating IPA in such a way that you can be distracted during vehicle operation. For additional information, please visit "
+      link2: "http://www.infinitipersonalassistant.com/tc"
+      not_share_information: "We do not share your information with any other company."
+    thankyou: "Thank You"
+    thankyou_copy: "Thank you for your interest in the All-New Infiniti Q50. As more details are revealed about the Infiniti Q50, we'll keep you updated. We appreciate your interest and look forward to sharing more about this vehicle in the future."
+    next_step_title: "Suggested Next Steps"
+    next_step_link: "Visit InfinitiUSA.com"
+    stay_connected_title: "Stay Connected"
+    view_details:
+      copy1: "Join the Infiniti Q50 mailing list for preferred access to the latest on this breakthrough sports sedan. Then experience the refined service of Infiniti Personal Assistant for 90 days, with our compliments. You’ll enjoy live, 24-hour access to a team of professional personal assistants, ready to help with:"
+      bullet1: "Directory assistance"
+      bullet2: "Traffic conditions"
+      bullet3: "Sports scores and stats"
+      bullet4: "Dining recommendations/reservations"
+      bullet5: "Movie times/reviews"
+      bullet6: "Additional services"
+      copy2: "To take advantage of this unprecedented opportunity, simply register for Infiniti Q50 updates by filling in the fields below. Once your registration has been processed, you will receive a link and further instructions on how to activate your 90-day trial."
+  #GALLERY PAGE
+  gallery:
+    page_title: "Zcela nový model Infiniti Q50: Fotografie a pohledy | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Prohlédněte si exkluzivní fotografie zcela nového modelu Infiniti Q50 a panoramatické pohledy ze všech stran."
+    page_canonical: "/csy-cz/gallery/index.html"
+    page_interior_canonical: "/csy-cz/gallery/interior.html"
+    page_threesixty_canonical: "/csy-cz/gallery/360s.html"
+    threesixty:
+      header: "Exteriér ze všech stran;"
+      copy: "&lt;&nbsp;Přejetím otáčejte&nbsp;&gt;"
+    panorama:
+      header: "Pohled ze všech stran"
+      copy: "Začněte klepnutím"
+  #DISCLAIMERS
+  disclaimers:
+    microsite: "Všechny ilustrace, fotografie a specifikace uvedené v této publikaci vycházejí z koncepčního vozu, i když odrážejí nejnovější informace z výroby dostupné v době tisku. Protože jde o prototypový vůz, jehož konečný design, výbava a příslušenství dosud nebyly stanoveny, mohou se sériově vyráběné vozy lišit od vyobrazených. Před zakoupením si prohlédněte skutečný sériově vyráběný vůz v centru Infiniti. Dostupnost a dodací lhůty konkrétních verzí a úrovní výbavy se mohou lišit."
+    design:
+      luxury_seating: "Platí pouze pro přední sedadla."
+    performance:
+      personalized_drive_modes: "Pouze pro účely názorné prezentace. Tato ukázka nepředstavuje skutečný průměr zatáčení. Dostupnost režimů závisí na volbě motoru a převodovky."
+      engines: "Definitivní hodnoty CO2 budou uvedeny po homologaci. Hodnoty CO2 se liší v závislosti na motoru, převodovce a rozměrech pneumatik."
+    technology:
+      digital_environment: "Snímky obrazovek jsou simulované. Je vyobrazeno prototypové digitální rozhraní a návrhy obrazovek, které se mohou lišit od sériově vyráběných vozů."
+      intouch: "Řízení je odpovědná činnost. Služby aplikací Infiniti InTouch&#8482; využívejte jen tehdy, když je to bezpečné. Podmínkou registrace je smlouva o předplatném. Je vyžadován kompatibilní inteligentní telefon. Pokrytí sítě může být v některých oblastech omezené. Mapy GPS nemusí být podrobné ve všech oblastech a nemusí odrážet aktuální dopravní omezení. Některé aplikace a služby, například Google Points of Interest a Send to Car, jsou poskytovány nezávislými firmami mimo dosah společnosti Infiniti. Když dojde k ukončení či omezení poskytování určité aplikace nebo služby ze strany jejího poskytovatele, služba může být pozastavena nebo ukončena, aniž by o tom společnost Infiniti a její zástupci byli informováni nebo za tuto skutečnost odpovídali. Infiniti neodpovídá za výměny či upgrady vybavení nebo aplikací a s tím související náklady způsobené změnami v aplikacích nebo službách, které mohou být spojeny s jejich dalším používáním. Dostupnost aplikací InTouch&#8482; může být závislá na zemi. Pro jejich používání platí podmínky smlouvy o předplatném. Komunikace e-mailem a zprávami SMS může podléhat standardním poplatkům za textové zprávy a datové přenosy."
+      connection: "Driving is serious business. Only use Infiniti Connection<sup>&trade;</sup> and Infiniti Connection Plus services when safe to do so. Subscription Agreement required to enroll. Initial 12 months, beginning on your date of purchase, included complimentary. Subsequently, your credit card (if on file) will be charged at the then current subscription rate and your service will continue for 1 year periods under the terms of your Subscription Agreement, unless cancelled. Services require compatible 2G GSM/GPRS cellular network. Cellular network and vehicle services, including Google Calendar<sup>&trade;</sup>, provided by independent companies not within Infiniti’s control. Cellular network not available in all areas. 2G cellular network not available in all areas. In areas with 2G network coverage, signal strength may vary and/or not be available at all times. Cellular technology is evolving, and changes to cellular networks may affect future service functionality. Ask your cellular network carrier for details on anticipated 2G network availability in your area and how this may affect your planned usage. Should a cellular provider or service provider terminate/further restrict service, service may be suspended or terminated without notice or liability to Infiniti and its affiliates and agents. Infiniti not responsible for any equipment replacement or upgrades, or associated costs, that may be required for continued operation due to service changes.Terms and conditions of Subscription Agreement apply. Standard text rates and/or data usage may apply to communications received by email or SMS/text message."
+      backup_collision: "Systém BCI nezjistí každý předmět a je funkční pouze v omezeném rozsahu rychlostí. Před manévrováním s vozem vždy zkontrolujte okolí. Systém nenahrazuje správné postupy při couvání. Před couváním se vždy otočte a zkontrolujte situaci za vozem. Podrobnosti najdete v příručce vlastníka. * K dispozici pouze s automatickou převodovkou."
+      monitor: "Systém Around View<sup>&reg;</sup> Monitor s detekcí pohybujících se objektů eliminuje slepé úhly, nemusí však zjistit každý předmět. Před manévrováním s vozem vždy zkontrolujte okolí. Systém nenahrazuje správné postupy při couvání. Před couváním se vždy otočte a zkontrolujte situaci za vozem. Detekce pohybujících se objektů je funkční při rychlosti vozu do 8 km/h."
+      lane_depart: "Systém LDW je funkční pouze tehdy, když jsou na vozovce zřetelně viditelné vyznačené pruhy. Pracuje pouze v omezeném rozsahu rychlostí. Podrobnosti najdete v příručce vlastníka."
+      lane_depart2: "Systém LDP je funkční pouze tehdy, když jsou na vozovce zřetelně viditelné vyznačené pruhy. Pracuje pouze v omezeném rozsahu rychlostí. Podrobnosti najdete v příručce vlastníka."
+      blind_spot: "Systémy Blind Spot Warning/Blind Spot Intervention® nenahrazují správné postupy při změně jízdních pruhů. Nemohou zabránit kontaktům s jinými vozidly a nehodám. Nemusí zjistit každé vozidlo a každý předmět ve vašem okolí."
+      predict_collision: "Smyslem systému prediktivního varování před čelní srážkou je upozornit vás, než dojde ke srážce. Sám nemůže srážce zabránit. Pracuje pouze v omezeném rozsahu rychlostí. Jezděte vždy opatrně."
+      forward_braking: "Systém nouzového přímého brzdění nemůže zabránit srážkám způsobeným neopatrnou nebo nebezpečnou jízdou. Za určitých podmínek vás nemusí upozornit ani zabrzdit vůz. Pracuje pouze v omezeném rozsahu rychlostí. Jezděte vždy opatrně."
+      air_bags: "Airbagy představují pouze doplňkový ochranný systém. Vždy se připoutejte bezpečnostním pásem. Na přední sedadlo spolujezdce nesmí být umisťovány dětské zádržné systémy orientované proti směru jízdy, a to ani při použitém senzoru obsazení místa spolujezdce. Děti do 12 let musí cestovat na zadním sedadle a podle svého vzrůstu musí být zajištěny s použitím zádržného systému, sedadlové podložky nebo bezpečnostního pásu. Airbagy se aktivují jen při určitých nehodách. Podrobnosti najdete v příručce vlastníka."
+      seat_belt: "Vždy se připoutejte bezpečnostním pásem a neřiďte pod vlivem alkoholu. ©2013 INFINITI, organizační jednotka společnosti Nissan North America, Inc"
+      distance_control: "Asistent kontroly vzdálenosti pomáhá za určitých podmínek udržovat odstup od vozidla před vámi. Není to systém prevence srážek. Nesešlápnutí brzdového pedálu může vést k nehodě."
+      cruise: "Inteligentní tempomat pro celý rozsah rychlostí není systém prevence srážek ani výstražné zařízení. Používá pouze omezené brzdění. Nesešlápnutí brzdového pedálu může vést k nehodě."
+  #404
+  four-zero-four:
+    page_title: "Zcela nový model Infiniti Q50: Chyba 404 | Infiniti Česká republika"
+    page_description: "Oficiální web Infiniti Česká republika: Představujeme zcela nový model Infiniti Q50. Seznamte se s designem, výkonem a technologiemi tohoto nového revolučního modelu."
+    page_canonical: "/csy-cz/404.html"
+    intro:
+      header: "Omlouváme se"
+      copy: "Požadovaná stránka bohužel neexistuje. Pro návrat k obsahu klikněte na tlačítko níže nebo zvolte některý z odkazů."
+      button: "Navštívit mikrostránky modelu Q50"
+    

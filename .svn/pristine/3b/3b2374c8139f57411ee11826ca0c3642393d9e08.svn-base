@@ -1,0 +1,40 @@
+(function(NNA, $) {
+
+  NNA.PageControllers.Colors = NNA.PageController.extend({
+    init : function(options) {
+      this._super(options);
+
+      images = [];
+      <% data.q50.en.cfg.model.colors.exterior.each do |color| %>
+        images.push('<%= asset_path :images, "colors/exterior/" + color.color_id.downcase + ".jpg" %>');
+      <% end %>
+
+      var that = this;
+      NNA.Utils.preloadImages(images).done(function() {      
+        var defaultColor = "QAA";
+        that.selectColorSwatch(defaultColor, true);
+
+        $("#content_colors_container li").click( function(e) {
+          that.selectColorSwatch($(this).data('id'));
+        });
+      });
+
+      debug.info('NNA.PageControllers.Colors: initialized');
+    },
+    selectColorSwatch: function(colorCode, skipTracking) {
+      colorCode = colorCode.toLowerCase();
+      
+      $("#selected").removeAttr("id");
+      $("li[data-id=" + colorCode + "]").attr("id","selected");
+
+      $("#content_colors_container h3 span").html($("li[data-id=" + colorCode + "]").data('label'));
+
+      var path = NNA.PATHS.CONTEXT + 'media/colors/exterior/' + colorCode + '.jpg';
+      $("#car_preview").css("background-image", "url(" + path + ")");
+
+      if(!skipTracking) $.publish('/nna/colors/change');
+
+      debug.info("Swatch Selected: " + colorCode);
+    }
+  });
+})(NNA, jQuery); 
